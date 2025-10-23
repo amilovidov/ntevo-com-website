@@ -7,6 +7,13 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: '/index.html',
+        privacy: '/privacy.html',
+        terms: '/terms.html'
+      }
+    }
   }
 });
