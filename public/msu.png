@@ -1,41 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<title>Wikimedia Error</title>
-<style>
-* { margin: 0; padding: 0; }
-body { background: #fff; font: 15px/1.6 sans-serif; color: #333; }
-.content { margin: 7% auto 0; padding: 2em 1em 1em; max-width: 640px; display: flex; flex-direction: row; flex-wrap: wrap; }
-.footer { clear: both; margin-top: 14%; border-top: 1px solid #e5e5e5; background: #f9f9f9; padding: 2em 0; font-size: 0.8em; text-align: center; }
-img { margin: 0 2em 2em 0; }
-a img { border: 0; }
-h1 { margin-top: 1em; font-size: 1.2em; }
-.content-text { flex: 1; }
-p { margin: 0.7em 0 1em 0; }
-a { color: #0645ad; text-decoration: none; }
-a:hover { text-decoration: underline; }
-code { font-family: sans-serif; }
-summary { font-weight: bold; cursor: pointer; }
-details[open] { background: #970302; color: #dfdedd; }
-.text-muted { color: #777; }
-@media (prefers-color-scheme: dark) {
-  a { color: #9e9eff; }
-  body { background: transparent; color: #ddd; }
-  .footer { border-top: 1px solid #444; background: #060606; }
-  #logo { filter: invert(1) hue-rotate(180deg); }
-  .text-muted { color: #888; }
-}
-</style>
-<meta name="color-scheme" content="light dark">
-<div class="content" role="main">
-<a href="https://www.wikimedia.org"><img id="logo" src="https://www.wikimedia.org/static/images/wmf-logo.png" srcset="https://www.wikimedia.org/static/images/wmf-logo-2x.png 2x" alt="Wikimedia" width="135" height="101">
-</a>
-<div class="content-text">
-<h1>Error</h1>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    
+		<link href="../../../../../_app/immutable/assets/0.22576152.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/Row.30106fb6.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/Col.74b0737d.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/DropdownBlock.a33678f6.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/Svg.89943bcb.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/Button.144eb78c.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/Box.dfb7a635.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/AccordionBlock.b4d4083b.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/ButtonGroup.22006c2b.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/SocialBlock.215751ec.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/Input.84589deb.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/Section.8f9f9e69.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/NProgress.771398e6.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/1.a2b6a4b2.css" rel="stylesheet">
+		<link href="../../../../../_app/immutable/assets/Loader.f34b506d.css" rel="stylesheet">
+  </head>
+  <body>
+    
 
-<p>Our servers are currently under maintenance or experiencing a technical issue</p>
-</div>
-</div>
-<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request served via cp1105 cp1105, Varnish XID 291557372<br>Upstream caches: cp1105 int<br>Error: 404, Not Found at Thu, 23 Oct 2025 22:55:01 GMT<br><details><summary>Sensitive client information</summary>IP address: 2600:1700:f91:c510:4564:44d1:8d3:dedd</details></code></p>
-</div>
+
+
+
+
+
+
+
+
+<main class="container container_main svelte-vg6s6g">
+</main>
+
+
+
+
+
+
+			
+			<script>
+				{
+					__sveltekit_1u7bvbt = {
+						base: new URL("../../../../..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../../../../../_app/immutable/entry/start.058e8035.js"),
+						import("../../../../../_app/immutable/entry/app.94628188.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 1],
+							data,
+							form: null,
+							error: {message:"Error: 404"},
+							status: 404
+						});
+					});
+				}
+			</script>
+		
+  </body>
 </html>
