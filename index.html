@@ -381,19 +381,52 @@
         }
 
         .linkedin-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--tech-blue);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
             transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
         }
 
         .linkedin-link:hover {
-            color: var(--accent-violet);
-            transform: translateX(3px);
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .linkedin-link img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .company-logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--warm-gray);
+        }
+
+        .company-logos a {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .company-logos a:hover {
+            transform: translateY(-3px);
+        }
+
+        .company-logos img {
+            height: 30px;
+            width: auto;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .company-logos a:hover img {
+            opacity: 1;
         }
 
         /* Footer */
@@ -523,10 +556,23 @@
                     <p class="team-bio">
                         15+ years building AI/ML, mobile, and SaaS products as a technical product manager at IBM, Samsung, and Nike. Owns product strategy and mobile app development.
                     </p>
-                    <a href="https://www.linkedin.com/in/milovidov/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
-                        <span class="material-symbols-outlined">link</span>
-                        LinkedIn Profile
+                    <a href="https://www.linkedin.com/in/milovidov/" target="_blank" rel="noopener noreferrer" class="linkedin-link" aria-label="LinkedIn Profile">
+                        <img src="/linkedin.svg" alt="LinkedIn">
                     </a>
+                    <div class="company-logos">
+                        <a href="https://www.nike.com" target="_blank" rel="noopener noreferrer" aria-label="Nike">
+                            <img src="/nike.svg" alt="Nike" title="Nike">
+                        </a>
+                        <a href="https://www.ibm.com" target="_blank" rel="noopener noreferrer" aria-label="IBM">
+                            <img src="/ibm.svg" alt="IBM" title="IBM">
+                        </a>
+                        <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer" aria-label="Samsung">
+                            <img src="/samsung.svg" alt="Samsung" title="Samsung">
+                        </a>
+                        <a href="https://eng.mephi.ru" target="_blank" rel="noopener noreferrer" aria-label="MEPhI">
+                            <img src="/mephi.png" alt="MEPhI" title="National Research Nuclear University MEPhI">
+                        </a>
+                    </div>
                 </div>
 
                 <div class="team-member">
@@ -536,10 +582,20 @@
                     <p class="team-bio">
                         15+ years building data privacy and enterprise platforms as a developer and engineering manager at Airbnb and Outreach. Owns backend, web app development, and infrastructure.
                     </p>
-                    <a href="https://www.linkedin.com/in/alexander-klimov-8521599/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
-                        <span class="material-symbols-outlined">link</span>
-                        LinkedIn Profile
+                    <a href="https://www.linkedin.com/in/alexander-klimov-8521599/" target="_blank" rel="noopener noreferrer" class="linkedin-link" aria-label="LinkedIn Profile">
+                        <img src="/linkedin.svg" alt="LinkedIn">
                     </a>
+                    <div class="company-logos">
+                        <a href="https://www.airbnb.com" target="_blank" rel="noopener noreferrer" aria-label="Airbnb">
+                            <img src="/airbnb.svg" alt="Airbnb" title="Airbnb">
+                        </a>
+                        <a href="https://www.outreach.io" target="_blank" rel="noopener noreferrer" aria-label="Outreach">
+                            <img src="/outreach.svg" alt="Outreach" title="Outreach">
+                        </a>
+                        <a href="https://usm.md/en" target="_blank" rel="noopener noreferrer" aria-label="Moldova State University">
+                            <img src="/usm.png" alt="Chisinau State University" title="Moldova State University">
+                        </a>
+                    </div>
                 </div>
 
                 <div class="team-member">
@@ -549,10 +605,20 @@
                     <p class="team-bio">
                         Owns marketing and strategy. 2x founder with proven track record of achieving profitability in first year. Expert in building community and brand presence.
                     </p>
-                    <a href="https://www.linkedin.com/in/oxana-milovidova/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
-                        <span class="material-symbols-outlined">link</span>
-                        LinkedIn Profile
+                    <a href="https://www.linkedin.com/in/oxana-milovidova/" target="_blank" rel="noopener noreferrer" class="linkedin-link" aria-label="LinkedIn Profile">
+                        <img src="/linkedin.svg" alt="LinkedIn">
                     </a>
+                    <div class="company-logos">
+                        <a href="https://www.bankofamerica.com" target="_blank" rel="noopener noreferrer" aria-label="Bank of America">
+                            <img src="/bofa.svg" alt="Bank of America" title="Bank of America">
+                        </a>
+                        <a href="https://www.fuqua.duke.edu" target="_blank" rel="noopener noreferrer" aria-label="Duke Fuqua School of Business">
+                            <img src="/duke.svg" alt="Duke University" title="Duke Fuqua School of Business">
+                        </a>
+                        <a href="https://www.msu.ru/en" target="_blank" rel="noopener noreferrer" aria-label="Moscow State University">
+                            <img src="/msu.svg" alt="Moscow State University" title="Lomonosov Moscow State University">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
