@@ -347,6 +347,15 @@
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
         }
 
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            border: 3px solid var(--warm-gray);
+        }
+
         .team-role {
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.85rem;
@@ -368,6 +377,23 @@
             color: var(--soft-gray);
             line-height: 1.7;
             font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .linkedin-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--tech-blue);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .linkedin-link:hover {
+            color: var(--accent-violet);
+            transform: translateX(3px);
         }
 
         /* Footer */
@@ -491,27 +517,42 @@
 
             <div class="team-grid">
                 <div class="team-member">
+                    <img src="/alex-milovidov.png" alt="Alexander Milovidov" class="team-photo">
                     <div class="team-role">CEO / Co-Founder</div>
                     <h3 class="team-name">Alexander Milovidov</h3>
                     <p class="team-bio">
                         15+ years building AI/ML, mobile, and SaaS products as a technical product manager at IBM, Samsung, and Nike. Owns product strategy and mobile app development.
                     </p>
+                    <a href="https://www.linkedin.com/in/milovidov/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <span class="material-symbols-outlined">link</span>
+                        LinkedIn Profile
+                    </a>
                 </div>
 
                 <div class="team-member">
+                    <img src="/alex-klimov.png" alt="Alexander Klimov" class="team-photo">
                     <div class="team-role">CTO / Co-Founder</div>
                     <h3 class="team-name">Alexander Klimov</h3>
                     <p class="team-bio">
                         15+ years building data privacy and enterprise platforms as a developer and engineering manager at Airbnb and Outreach. Owns backend, web app development, and infrastructure.
                     </p>
+                    <a href="https://www.linkedin.com/in/alexander-klimov-8521599/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <span class="material-symbols-outlined">link</span>
+                        LinkedIn Profile
+                    </a>
                 </div>
 
                 <div class="team-member">
+                    <img src="/oxana-milovidova.png" alt="Oxana Milovidova" class="team-photo">
                     <div class="team-role">COO / Co-Founder</div>
                     <h3 class="team-name">Oxana Milovidova</h3>
                     <p class="team-bio">
                         Owns marketing and strategy. 2x founder with proven track record of achieving profitability in first year. Expert in building community and brand presence.
                     </p>
+                    <a href="https://www.linkedin.com/in/oxana-milovidova/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                        <span class="material-symbols-outlined">link</span>
+                        LinkedIn Profile
+                    </a>
                 </div>
             </div>
         </div>
@@ -520,8 +561,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="footer-text">© 2025 Integrity Evolution. All rights reserved.</p>
-            <p class="footer-text" style="margin-top: 0.5rem;">Contact: <a href="mailto:info@ntevo.com" style="color: var(--neon-cyan); text-decoration: none;">info@ntevo.com</a></p>
+            <p class="footer-text">© 2025 Integrity Evolution Inc. All rights reserved.</p>
+            <p class="footer-text" style="margin-top: 0.5rem; font-size: 0.85rem;">
+                131 Continental Dr Suite 305, Newark DE 19713, United States
+            </p>
+            <p class="footer-text" style="margin-top: 0.75rem;">Contact: <a href="mailto:info@ntevo.com" style="color: var(--neon-cyan); text-decoration: none;">info@ntevo.com</a></p>
             <p class="footer-text" style="margin-top: 0.75rem;">
                 <a href="/privacy.html" style="color: var(--soft-gray); text-decoration: none; margin-right: 1.5rem;">Privacy Policy</a>
                 <a href="/terms.html" style="color: var(--soft-gray); text-decoration: none;">Terms of Service</a>
