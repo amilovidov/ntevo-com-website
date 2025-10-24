@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Statement "Expanding memory" - Font & Color Mocks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --tech-white: #FAFAFA;
+            --pure-white: #FFFFFF;
+            --tech-black: #0A0A0A;
+            --soft-gray: #6B7280;
+            --tech-blue: #1E40AF;
+            --neon-cyan: #00D4FF;
+            --accent-violet: #7C3AED;
+            --warm-gray: #E5E7EB;
+            --bauhaus-red: #E63946;
+            --bauhaus-yellow: #F1C40F;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--tech-white);
+            color: var(--tech-black);
+            padding: 2rem;
+        }
+
+        .mock-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .option {
+            background: var(--pure-white);
+            border: 2px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .option-label {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--tech-blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Mock header structure */
+        .top-app-bar {
+            background: var(--pure-white);
+            border-bottom: 1px solid var(--warm-gray);
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .app-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            font-size: 1.75rem;
+            color: var(--tech-black);
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .app-title::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--bauhaus-red);
+        }
+
+        .description {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #F3F4F6;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: var(--soft-gray);
+        }
+
+        /* Current version (for comparison) */
+        .current .mission-statement {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--neon-cyan);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            opacity: 0.9;
+        }
+
+        /* Option 1: Serif Elegant */
+        .option-1 .mission-statement {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            color: var(--accent-violet);
+            font-weight: 600;
+            font-style: italic;
+            letter-spacing: 0.3px;
+        }
+
+        /* Option 2: Modern Grotesk */
+        .option-2 .mission-statement {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.95rem;
+            color: var(--bauhaus-red);
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* Option 3: Subtle Gray */
+        .option-3 .mission-statement {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: var(--soft-gray);
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.7;
+        }
+
+        /* Option 4: Bold Tech Blue */
+        .option-4 .mission-statement {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            color: var(--tech-blue);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Option 5: Serif with Gold */
+        .option-5 .mission-statement {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.05rem;
+            color: #B8860B; /* Dark gold */
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+
+        /* Option 6: Minimal Black */
+        .option-6 .mission-statement {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            color: var(--tech-black);
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.6;
+        }
+
+        /* Option 7: Crimson Literary */
+        .option-7 .mission-statement {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.1rem;
+            color: #8B4513; /* Saddle brown */
+            font-weight: 600;
+            font-style: italic;
+            letter-spacing: 0.3px;
+        }
+
+        /* Option 8: Gradient Tech */
+        .option-8 .mission-statement {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.9rem;
+            background: linear-gradient(135deg, var(--tech-blue), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* Option 9: Yellow Accent */
+        .option-9 .mission-statement {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--tech-black);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            background: var(--bauhaus-yellow);
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+        }
+
+        /* Option 10: Deep Purple */
+        .option-10 .mission-statement {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            color: #4B0082; /* Indigo */
+            font-weight: 500;
+            font-style: italic;
+            letter-spacing: 0.8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mock-container">
+        <h1>Mission Statement "Expanding memory" - Font & Color Options</h1>
+
+        <!-- Current (for comparison) -->
+        <div class="option current">
+            <div class="option-label" style="background: #6B7280;">CURRENT VERSION</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">Expanding memory</div>
+            </header>
+            <div class="description">
+                <strong>Current:</strong> JetBrains Mono / Neon Cyan (#00D4FF) / 500 weight - Tech-focused, matches the mono font theme
+            </div>
+        </div>
+
+        <!-- Option 1: Serif Elegant -->
+        <div class="option option-1">
+            <div class="option-label">Option 1: Elegant Serif</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">Expanding memory</div>
+            </header>
+            <div class="description">
+                <strong>Playfair Display / Violet (#7C3AED) / Italic</strong> - Sophisticated, literary feel. Suggests depth and thoughtfulness. Creates contrast with tech font.
+            </div>
+        </div>
+
+        <!-- Option 2: Modern Grotesk -->
+        <div class="option option-2">
+            <div class="option-label">Option 2: Bold Modern</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">EXPANDING MEMORY</div>
+            </header>
+            <div class="description">
+                <strong>Space Grotesk / Red (#E63946) / Uppercase</strong> - Bold, urgent, attention-grabbing. Matches Bauhaus red accent. Modern geometric sans.
+            </div>
+        </div>
+
+        <!-- Option 3: Subtle Gray -->
+        <div class="option option-3">
+            <div class="option-label">Option 3: Whisper Minimal</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">EXPANDING MEMORY</div>
+            </header>
+            <div class="description">
+                <strong>Inter / Soft Gray (#6B7280) / Uppercase / Subtle</strong> - Understated, whispered tagline. Professional and clean. Doesn't compete with title.
+            </div>
+        </div>
+
+        <!-- Option 4: Bold Tech Blue -->
+        <div class="option option-4">
+            <div class="option-label">Option 4: Tech Bold</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">EXPANDING MEMORY</div>
+            </header>
+            <div class="description">
+                <strong>JetBrains Mono / Tech Blue (#1E40AF) / Bold Uppercase</strong> - Strong tech identity. Matches primary blue theme. Mono font consistency.
+            </div>
+        </div>
+
+        <!-- Option 5: Serif with Gold -->
+        <div class="option option-5">
+            <div class="option-label">Option 5: Premium Gold</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">Expanding memory</div>
+            </header>
+            <div class="description">
+                <strong>DM Serif Display / Dark Gold (#B8860B) / Italic</strong> - Premium, prestigious feel. Gold suggests value and longevity. Timeless serif.
+            </div>
+        </div>
+
+        <!-- Option 6: Minimal Black -->
+        <div class="option option-6">
+            <div class="option-label">Option 6: Pure Minimal</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">EXPANDING MEMORY</div>
+            </header>
+            <div class="description">
+                <strong>Inter / Black (#0A0A0A) / Ultra Minimal</strong> - Maximum subtlety. Almost disappears but adds sophistication. Wide letter spacing.
+            </div>
+        </div>
+
+        <!-- Option 7: Crimson Literary -->
+        <div class="option option-7">
+            <div class="option-label">Option 7: Literary Brown</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">Expanding memory</div>
+            </header>
+            <div class="description">
+                <strong>Crimson Text / Saddle Brown (#8B4513) / Italic</strong> - Academic, scholarly feel. Evokes old books and deep knowledge. Warm earthy tone.
+            </div>
+        </div>
+
+        <!-- Option 8: Gradient Tech -->
+        <div class="option option-8">
+            <div class="option-label">Option 8: Tech Gradient</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">Expanding memory</div>
+            </header>
+            <div class="description">
+                <strong>Space Grotesk / Blue-Violet Gradient / Bold</strong> - Modern tech aesthetic. Matches hero gradient. Dynamic and eye-catching.
+            </div>
+        </div>
+
+        <!-- Option 9: Yellow Accent -->
+        <div class="option option-9">
+            <div class="option-label">Option 9: Bauhaus Badge</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">Expanding memory</div>
+            </header>
+            <div class="description">
+                <strong>JetBrains Mono / Black on Yellow Badge</strong> - Bauhaus-inspired accent. Yellow background creates visual pop. Badge-like design element.
+            </div>
+        </div>
+
+        <!-- Option 10: Deep Purple -->
+        <div class="option option-10">
+            <div class="option-label">Option 10: Deep Wisdom</div>
+            <header class="top-app-bar">
+                <div class="logo-container">
+                    <h1 class="app-title">Integrity Evolution</h1>
+                </div>
+                <div class="mission-statement">Expanding memory</div>
+            </header>
+            <div class="description">
+                <strong>Playfair Display / Indigo (#4B0082) / Italic</strong> - Deep, mysterious, wise. Suggests depth of knowledge. Rich purple evokes memory and thought.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

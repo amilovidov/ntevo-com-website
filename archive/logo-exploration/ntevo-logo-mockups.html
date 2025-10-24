@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ntevo Logo Mockups - Celestial Theme</title>
+    <style>
+        :root {
+            --tech-white: #FAFAFA;
+            --tech-black: #0A0A0A;
+            --soft-gray: #6B7280;
+            --warm-gray: #E5E7EB;
+            --bauhaus-red: #E63946;
+            --bauhaus-yellow: #F1C40F;
+            --bauhaus-blue: #1E40AF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--tech-white);
+            color: var(--tech-black);
+            padding: 3rem 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--soft-gray);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .legend {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .legend-shape {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .legend-circle {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: var(--bauhaus-yellow);
+        }
+
+        .legend-square {
+            width: 20px;
+            height: 20px;
+            background: var(--bauhaus-blue);
+        }
+
+        .legend-triangle {
+            width: 0;
+            height: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 20px solid var(--bauhaus-red);
+        }
+
+        .logos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .logo-card {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .logo-card:hover {
+            border-color: var(--bauhaus-blue);
+            box-shadow: 0 8px 30px rgba(30, 64, 175, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .logo-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--tech-black);
+        }
+
+        .logo-description {
+            font-size: 0.9rem;
+            color: var(--soft-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .logo-preview {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            display: block;
+            background: var(--tech-white);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .size-preview {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--warm-gray);
+        }
+
+        .size-preview-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--soft-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .size-variants {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .size-variant {
+            text-align: center;
+        }
+
+        .size-label {
+            font-size: 0.75rem;
+            color: var(--soft-gray);
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ntevo Logo Concepts</h1>
+        <p class="subtitle">Celestial System Theme: Sun (yellow circle), Earth (blue square), Moon (red triangle)</p>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-shape">
+                    <div class="legend-circle"></div>
+                </div>
+                <span><strong>Sun</strong> - Yellow Circle (Center/Energy)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-shape">
+                    <div class="legend-square"></div>
+                </div>
+                <span><strong>Earth</strong> - Blue Square (Orbits Sun)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-shape">
+                    <div class="legend-triangle"></div>
+                </div>
+                <span><strong>Moon</strong> - Red Triangle (Orbits Earth)</span>
+            </div>
+        </div>
+
+        <div class="logos-grid">
+            <div class="logo-card">
+                <h3 class="logo-title">Option 1: Orbital</h3>
+                <p class="logo-description">
+                    Classic circular orbits with dashed guide paths. Clean, scientific, and immediately readable as a solar system.
+                </p>
+                <img src="/public/ntevo-logo-option1.svg" alt="Option 1" class="logo-preview">
+                <div class="size-preview">
+                    <div class="size-preview-title">Size Variants</div>
+                    <div class="size-variants">
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option1.svg" width="64" height="64">
+                            <div class="size-label">64×64</div>
+                        </div>
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option1.svg" width="32" height="32">
+                            <div class="size-label">32×32</div>
+                        </div>
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option1.svg" width="16" height="16">
+                            <div class="size-label">16×16</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h3 class="logo-title">Option 2: Dynamic Angle</h3>
+                <p class="logo-description">
+                    Diagonal perspective with elliptical orbits. Creates depth and suggests movement through space.
+                </p>
+                <img src="/public/ntevo-logo-option2.svg" alt="Option 2" class="logo-preview">
+                <div class="size-preview">
+                    <div class="size-preview-title">Size Variants</div>
+                    <div class="size-variants">
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option2.svg" width="64" height="64">
+                            <div class="size-label">64×64</div>
+                        </div>
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option2.svg" width="32" height="32">
+                            <div class="size-label">32×32</div>
+                        </div>
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option2.svg" width="16" height="16">
+                            <div class="size-label">16×16</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h3 class="logo-title">Option 3: Minimalist</h3>
+                <p class="logo-description">
+                    No orbit lines, just the shapes. Earth square rotated 15°. Most abstract and modern Bauhaus interpretation.
+                </p>
+                <img src="/public/ntevo-logo-option3.svg" alt="Option 3" class="logo-preview">
+                <div class="size-preview">
+                    <div class="size-preview-title">Size Variants</div>
+                    <div class="size-variants">
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option3.svg" width="64" height="64">
+                            <div class="size-label">64×64</div>
+                        </div>
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option3.svg" width="32" height="32">
+                            <div class="size-label">32×32</div>
+                        </div>
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option3.svg" width="16" height="16">
+                            <div class="size-label">16×16</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h3 class="logo-title">Option 4: Abstract Motion</h3>
+                <p class="logo-description">
+                    Curved flowing paths suggesting orbital motion. More artistic and dynamic, less literal. Sun slightly off-center.
+                </p>
+                <img src="/public/ntevo-logo-option4.svg" alt="Option 4" class="logo-preview">
+                <div class="size-preview">
+                    <div class="size-preview-title">Size Variants</div>
+                    <div class="size-variants">
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option4.svg" width="64" height="64">
+                            <div class="size-label">64×64</div>
+                        </div>
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option4.svg" width="32" height="32">
+                            <div class="size-label">32×32</div>
+                        </div>
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option4.svg" width="16" height="16">
+                            <div class="size-label">16×16</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h3 class="logo-title">Option 5: Balanced System</h3>
+                <p class="logo-description">
+                    Horizontal layout emphasizing relationships. Sun has subtle glow, Earth as diamond (rotated 45°), Moon above pointing down.
+                </p>
+                <img src="/public/ntevo-logo-option5.svg" alt="Option 5" class="logo-preview">
+                <div class="size-preview">
+                    <div class="size-preview-title">Size Variants</div>
+                    <div class="size-variants">
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option5.svg" width="64" height="64">
+                            <div class="size-label">64×64</div>
+                        </div>
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option5.svg" width="32" height="32">
+                            <div class="size-label">32×32</div>
+                        </div>
+                        <div class="size-variant">
+                            <img src="/public/ntevo-logo-option5.svg" width="16" height="16">
+                            <div class="size-label">16×16</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

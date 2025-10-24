@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ntevo Logo V2 - Unorthodox Bauhaus Compositions</title>
+    <style>
+        :root {
+            --tech-white: #FAFAFA;
+            --tech-black: #0A0A0A;
+            --soft-gray: #6B7280;
+            --warm-gray: #E5E7EB;
+            --bauhaus-red: #E63946;
+            --bauhaus-yellow: #F1C40F;
+            --bauhaus-blue: #1E40AF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--tech-white);
+            color: var(--tech-black);
+            padding: 3rem 2rem;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--soft-gray);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .logos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .logo-card {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .logo-card:hover {
+            border-color: var(--bauhaus-blue);
+            box-shadow: 0 8px 30px rgba(30, 64, 175, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .logo-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--tech-black);
+        }
+
+        .logo-description {
+            font-size: 0.9rem;
+            color: var(--soft-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            min-height: 60px;
+        }
+
+        .logo-preview {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 1.5rem;
+            display: block;
+            background: white;
+            border: 1px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .size-variants {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1rem;
+            border-top: 1px solid var(--warm-gray);
+        }
+
+        .size-variant {
+            text-align: center;
+        }
+
+        .size-variant img {
+            background: white;
+            border: 1px solid var(--warm-gray);
+            border-radius: 4px;
+            padding: 0.5rem;
+        }
+
+        .size-label {
+            font-size: 0.7rem;
+            color: var(--soft-gray);
+            margin-top: 0.25rem;
+        }
+
+        .concept-note {
+            background: #FFF9E6;
+            border-left: 4px solid var(--bauhaus-yellow);
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+        }
+
+        .concept-note strong {
+            color: var(--tech-black);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ntevo Logo Concepts V2</h1>
+        <p class="subtitle">Unorthodox Bauhaus Compositions - Equal-sized shapes in creative arrangements</p>
+
+        <div class="concept-note">
+            <strong>Design Philosophy:</strong> These concepts move away from literal representations and explore abstract, geometric relationships between the three Bauhaus primitives: circle (yellow), square (blue), triangle (red).
+        </div>
+
+        <div class="logos-grid">
+            <div class="logo-card">
+                <h3 class="logo-title">1. Stacked Tower</h3>
+                <p class="logo-description">
+                    Vertical alignment with shapes stacked upward. Suggests growth, progression, building. Triangle base provides stability.
+                </p>
+                <img src="/public/ntevo-logo-v2-option1.svg" alt="Stacked Tower" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option1.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option1.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option1.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h3 class="logo-title">2. Triad</h3>
+                <p class="logo-description">
+                    Three shapes forming triangular composition. Balanced, harmonious. Suggests connection and equilibrium between elements.
+                </p>
+                <img src="/public/ntevo-logo-v2-option2.svg" alt="Triad" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option2.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option2.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option2.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h3 class="logo-title">3. Overlapping Energy</h3>
+                <p class="logo-description">
+                    Layered transparency creates depth. Diamond square background, circle middle, triangle front. Dynamic intersection of forms.
+                </p>
+                <img src="/public/ntevo-logo-v2-option3.svg" alt="Overlapping Energy" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option3.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option3.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option3.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h3 class="logo-title">4. Rotating Wheel</h3>
+                <p class="logo-description">
+                    Shapes arranged in circular pattern, each rotated. Suggests motion, cycle, evolution. Asymmetric but balanced.
+                </p>
+                <img src="/public/ntevo-logo-v2-option4.svg" alt="Rotating Wheel" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option4.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option4.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option4.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h3 class="logo-title">5. Balance Beam</h3>
+                <p class="logo-description">
+                    Horizontal arrangement on invisible line. Diamond square as pivot point. Suggests balance, precision, equilibrium.
+                </p>
+                <img src="/public/ntevo-logo-v2-option5.svg" alt="Balance Beam" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option5.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option5.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option5.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h3 class="logo-title">6. Nested Inside</h3>
+                <p class="logo-description">
+                    Concentric containment: triangle holds square holds circle. Suggests layers, depth, protection, core essence.
+                </p>
+                <img src="/public/ntevo-logo-v2-option6.svg" alt="Nested Inside" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option6.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option6.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option6.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <h3 class="logo-title">7. Conversation Bubbles</h3>
+                <p class="logo-description">
+                    Scattered arrangement suggesting dialogue and interaction. Organic spacing, slight rotations. Feels conversational and dynamic.
+                </p>
+                <img src="/public/ntevo-logo-v2-option7.svg" alt="Conversation Bubbles" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option7.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option7.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="/public/ntevo-logo-v2-option7.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

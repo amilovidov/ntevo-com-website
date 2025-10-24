@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Refined 3: Core Integrity - Central black circle (integrity) with shapes orbiting (evolution) -->
+
+  <!-- Central core (Integrity) - solid black circle -->
+  <circle cx="100" cy="100" r="12" fill="#0A0A0A"/>
+
+  <!-- Evolution circle path -->
+  <circle cx="100" cy="100" r="50" fill="none" stroke="#E5E7EB" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.3"/>
+
+  <!-- Yellow Circle (45°) -->
+  <circle cx="135" cy="65" r="18" fill="#F1C40F"/>
+
+  <!-- Blue Square (165°, diamond) -->
+  <g transform="translate(52, 115) rotate(45)">
+    <rect x="-18" y="-18" width="36" height="36" fill="#1E40AF"/>
+  </g>
+
+  <!-- Red Triangle (285°, pointing toward center) -->
+  <polygon points="135,135 148,150 122,150" fill="#E63946"/>
+</svg>

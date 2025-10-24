@@ -1,0 +1,21 @@
+<svg width="600" height="140" viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg">
+  <!-- Horizontal Lockup: Logo + Wordmark side by side -->
+
+  <!-- Logo (scaled to 140px height) -->
+  <g transform="translate(0, 0) scale(0.273)">
+    <!-- Center core -->
+    <circle cx="256" cy="256" r="18" fill="#0A0A0A"/>
+    <!-- Yellow Circle -->
+    <circle cx="256" cy="150" r="75" fill="#F1C40F"/>
+    <!-- Blue Square -->
+    <g transform="translate(164, 348) rotate(45)">
+      <rect x="-75" y="-75" width="150" height="150" fill="#1E40AF"/>
+    </g>
+    <!-- Red Triangle -->
+    <polygon points="348,348 433,470 263,470" fill="#E63946"/>
+  </g>
+
+  <!-- Wordmark - JetBrains Mono style -->
+  <text x="170" y="58" font-family="'JetBrains Mono', monospace" font-size="36" font-weight="500" letter-spacing="1" fill="#0A0A0A">Integrity</text>
+  <text x="170" y="98" font-family="'JetBrains Mono', monospace" font-size="36" font-weight="500" letter-spacing="1" fill="#0A0A0A">Evolution</text>
+</svg>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argo Logo - Bauhaus Minimalist Versions</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #FAFAFA;
+            padding: 2rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #0A0A0A;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .mock {
+            background: white;
+            border: 2px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .mock-label {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #1E40AF;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .logo-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+            background: #FBBE36;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            padding: 1rem;
+            background: #F3F4F6;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #6B7280;
+            line-height: 1.6;
+        }
+
+        svg {
+            max-width: 250px;
+            max-height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Argo Logo - Bauhaus Minimalist Interpretations</h1>
+
+        <div class="grid">
+            <!-- Version 1: Pure Geometric Sail -->
+            <div class="mock">
+                <div class="mock-label">Version 1: Pure Geometric</div>
+                <div class="logo-display">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="250" height="250">
+                        <!-- Simplified sail as curved shape -->
+                        <path d="M 60 140 Q 60 60, 100 40 L 100 140 Z" fill="#0C1015"/>
+
+                        <!-- Mast -->
+                        <rect x="98" y="35" width="4" height="110" fill="#0C1015"/>
+
+                        <!-- Hull - curved bottom -->
+                        <path d="M 40 140 Q 100 155, 160 140 L 155 150 Q 100 165, 45 150 Z" fill="#0C1015"/>
+
+                        <!-- Wave lines - simplified -->
+                        <path d="M 45 155 L 60 170 L 75 155 L 90 170 L 105 155 L 120 170 L 135 155 L 150 170"
+                              stroke="#0C4882" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+                        <!-- Sun circle -->
+                        <circle cx="140" cy="70" r="15" fill="#F69B0F"/>
+                    </svg>
+                </div>
+                <div class="description">
+                    <strong>Pure Geometric Sail:</strong> Simplified sail as a single curved quadratic bezier, straight mast, curved hull, and geometric wave pattern. Minimal elements, maximum impact.
+                </div>
+            </div>
+
+            <!-- Version 2: Abstract Triangular -->
+            <div class="mock">
+                <div class="mock-label">Version 2: Abstract Triangular</div>
+                <div class="logo-display">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="250" height="250">
+                        <!-- Triangle sail -->
+                        <path d="M 70 140 L 70 50 L 120 140 Z" fill="#0C1015"/>
+
+                        <!-- Accent triangle -->
+                        <path d="M 120 140 L 95 90 L 120 100 Z" fill="#0C4882"/>
+
+                        <!-- Mast line -->
+                        <line x1="70" y1="50" x2="70" y2="140" stroke="#0C1015" stroke-width="3"/>
+
+                        <!-- Hull base - semicircle -->
+                        <path d="M 40 140 Q 100 160, 160 140" stroke="#0C1015" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+                        <!-- Simplified waves -->
+                        <circle cx="60" cy="165" r="5" fill="#0C4882"/>
+                        <circle cx="80" cy="165" r="5" fill="#0C4882"/>
+                        <circle cx="100" cy="165" r="5" fill="#0C4882"/>
+                        <circle cx="120" cy="165" r="5" fill="#0C4882"/>
+                        <circle cx="140" cy="165" r="5" fill="#0C4882"/>
+
+                        <!-- Sun -->
+                        <circle cx="145" cy="65" r="12" fill="#F69B0F"/>
+                    </svg>
+                </div>
+                <div class="description">
+                    <strong>Abstract Triangular:</strong> Sharp geometric triangle sail with accent, circular wave dots instead of lines. Bauhaus emphasis on primary shapes (triangle, circle, line).
+                </div>
+            </div>
+
+            <!-- Version 3: Deconstructed Elements -->
+            <div class="mock">
+                <div class="mock-label">Version 3: Deconstructed</div>
+                <div class="logo-display">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="250" height="250">
+                        <!-- Sail as rectangle with cut -->
+                        <path d="M 65 55 L 95 55 L 95 140 L 65 140 L 65 95 Q 80 85, 95 95 Z" fill="#0C1015"/>
+
+                        <!-- Mast -->
+                        <rect x="93" y="50" width="4" height="95" fill="#0C1015"/>
+
+                        <!-- Hull - geometric base -->
+                        <rect x="45" y="140" width="110" height="12" rx="6" fill="#0C1015"/>
+
+                        <!-- Wave stripes -->
+                        <rect x="50" y="160" width="25" height="8" fill="#0C4882" transform="skewX(-20)"/>
+                        <rect x="75" y="160" width="25" height="8" fill="#0C4882" transform="skewX(-20)"/>
+                        <rect x="100" y="160" width="25" height="8" fill="#0C4882" transform="skewX(-20)"/>
+                        <rect x="125" y="160" width="25" height="8" fill="#0C4882" transform="skewX(-20)"/>
+
+                        <!-- Sun square -->
+                        <rect x="128" y="58" width="20" height="20" fill="#F69B0F" transform="rotate(45 138 68)"/>
+                    </svg>
+                </div>
+                <div class="description">
+                    <strong>Deconstructed Elements:</strong> Bauhaus deconstruction with rectangular sail cutout, skewed wave stripes, and diamond sun. Emphasizes construction and form.
+                </div>
+            </div>
+
+            <!-- Version 4: Circular Motion -->
+            <div class="mock">
+                <div class="mock-label">Version 4: Circular Motion</div>
+                <div class="logo-display">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="250" height="250">
+                        <!-- Circular sail -->
+                        <circle cx="90" cy="90" r="50" fill="#0C1015"/>
+
+                        <!-- Cut out negative space -->
+                        <circle cx="110" cy="90" r="35" fill="#FBBE36"/>
+
+                        <!-- Mast through center -->
+                        <rect x="88" y="50" width="4" height="100" fill="#0C1015"/>
+
+                        <!-- Hull arc -->
+                        <path d="M 45 145 Q 90 160, 135 145" stroke="#0C1015" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+                        <!-- Wave semicircles -->
+                        <path d="M 50 165 A 10 10 0 0 1 70 165 M 75 165 A 10 10 0 0 1 95 165 M 100 165 A 10 10 0 0 1 120 165"
+                              stroke="#0C4882" stroke-width="6" fill="none"/>
+
+                        <!-- Sun -->
+                        <circle cx="135" cy="65" r="13" fill="#F69B0F"/>
+                    </svg>
+                </div>
+                <div class="description">
+                    <strong>Circular Motion:</strong> Sail represented by overlapping circles creating negative space. Curved wave arcs. Emphasizes circular Bauhaus forms and movement.
+                </div>
+            </div>
+
+            <!-- Version 5: Constructivist Angles -->
+            <div class="mock">
+                <div class="mock-label">Version 5: Constructivist</div>
+                <div class="logo-display">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="250" height="250">
+                        <!-- Angular sail - parallelogram -->
+                        <path d="M 70 140 L 85 45 L 115 45 L 100 140 Z" fill="#0C1015"/>
+
+                        <!-- Accent shape -->
+                        <path d="M 100 140 L 115 80 L 125 85 L 110 140 Z" fill="#0C4882"/>
+
+                        <!-- Mast -->
+                        <line x1="85" y1="45" x2="85" y2="140" stroke="#0C1015" stroke-width="4"/>
+
+                        <!-- Hull - angular -->
+                        <path d="M 50 140 L 45 150 L 100 160 L 155 150 L 150 140 Z" fill="#0C1015"/>
+
+                        <!-- Zigzag waves -->
+                        <polyline points="50,165 65,175 80,165 95,175 110,165 125,175 140,165 155,175"
+                                  stroke="#0C4882" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+                        <!-- Sun with rays -->
+                        <circle cx="140" cy="60" r="10" fill="#F69B0F"/>
+                        <line x1="140" y1="45" x2="140" y2="50" stroke="#F69B0F" stroke-width="2"/>
+                        <line x1="140" y1="70" x2="140" y2="75" stroke="#F69B0F" stroke-width="2"/>
+                        <line x1="125" y1="60" x2="130" y2="60" stroke="#F69B0F" stroke-width="2"/>
+                        <line x1="150" y1="60" x2="155" y2="60" stroke="#F69B0F" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="description">
+                    <strong>Constructivist Angles:</strong> Russian Constructivism influence with angular parallelogram sail, zigzag waves, and geometric sun rays. Dynamic diagonal emphasis.
+                </div>
+            </div>
+
+            <!-- Version 6: Ultra Minimal -->
+            <div class="mock">
+                <div class="mock-label">Version 6: Ultra Minimal</div>
+                <div class="logo-display">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="250" height="250">
+                        <!-- Simple curved sail -->
+                        <path d="M 75 140 C 75 80, 75 60, 100 50 L 100 140 Z" fill="#0C1015"/>
+
+                        <!-- Hull - single line with caps -->
+                        <line x1="50" y1="145" x2="150" y2="145" stroke="#0C1015" stroke-width="14" stroke-linecap="round"/>
+
+                        <!-- Three wave lines -->
+                        <line x1="60" y1="165" x2="70" y2="175" stroke="#0C4882" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="85" y1="165" x2="95" y2="175" stroke="#0C4882" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="110" y1="165" x2="120" y2="175" stroke="#0C4882" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="135" y1="165" x2="145" y2="175" stroke="#0C4882" stroke-width="6" stroke-linecap="round"/>
+
+                        <!-- Sun -->
+                        <circle cx="135" cy="70" r="14" fill="#F69B0F"/>
+                    </svg>
+                </div>
+                <div class="description">
+                    <strong>Ultra Minimal:</strong> Absolute minimum elements - curved sail, single hull line, minimal wave strokes. Pure essence of the ship concept.
+                </div>
+            </div>
+
+            <!-- Version 7: Layered Shapes -->
+            <div class="mock">
+                <div class="mock-label">Version 7: Layered Composition</div>
+                <div class="logo-display">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="250" height="250">
+                        <!-- Background sail layer -->
+                        <path d="M 65 140 L 65 60 Q 90 50, 105 80 L 105 140 Z" fill="#0C4882" opacity="0.7"/>
+
+                        <!-- Front sail layer -->
+                        <path d="M 75 140 L 75 70 Q 95 55, 110 90 L 110 140 Z" fill="#0C1015"/>
+
+                        <!-- Mast -->
+                        <rect x="73" y="55" width="4" height="90" fill="#0C1015"/>
+
+                        <!-- Hull - double layer -->
+                        <ellipse cx="100" cy="145" rx="60" ry="8" fill="#0C1015"/>
+                        <ellipse cx="100" cy="148" rx="55" ry="6" fill="#0C4882"/>
+
+                        <!-- Wave pattern -->
+                        <path d="M 50 165 Q 60 170, 70 165 Q 80 160, 90 165 Q 100 170, 110 165 Q 120 160, 130 165 Q 140 170, 150 165"
+                              stroke="#0C4882" stroke-width="5" fill="none"/>
+
+                        <!-- Sun with inner circle -->
+                        <circle cx="140" cy="65" r="15" fill="#F69B0F"/>
+                        <circle cx="140" cy="65" r="8" fill="#FBBE36"/>
+                    </svg>
+                </div>
+                <div class="description">
+                    <strong>Layered Composition:</strong> Bauhaus layering with overlapping sail shapes, double hull layers, and nested sun circles. Depth through transparency and overlap.
+                </div>
+            </div>
+
+            <!-- Version 8: Grid-Based -->
+            <div class="mock">
+                <div class="mock-label">Version 8: Grid System</div>
+                <div class="logo-display">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="250" height="250">
+                        <!-- Grid-aligned sail -->
+                        <rect x="70" y="50" width="35" height="90" fill="#0C1015"/>
+                        <path d="M 105 50 Q 120 85, 105 140" fill="#0C1015"/>
+
+                        <!-- Mast on grid -->
+                        <rect x="68" y="48" width="3" height="95" fill="#F69B0F"/>
+
+                        <!-- Hull - geometric blocks -->
+                        <rect x="45" y="140" width="110" height="10" rx="5" fill="#0C1015"/>
+
+                        <!-- Wave blocks -->
+                        <rect x="50" y="160" width="15" height="15" fill="#0C4882"/>
+                        <rect x="70" y="160" width="15" height="15" fill="#0C4882"/>
+                        <rect x="90" y="160" width="15" height="15" fill="#0C4882"/>
+                        <rect x="110" y="160" width="15" height="15" fill="#0C4882"/>
+                        <rect x="130" y="160" width="15" height="15" fill="#0C4882"/>
+
+                        <!-- Sun square -->
+                        <rect x="125" y="55" width="25" height="25" fill="#F69B0F"/>
+                    </svg>
+                </div>
+                <div class="description">
+                    <strong>Grid System:</strong> Strict grid-based design with rectangular sail, square wave blocks, and square sun. Bauhaus grid discipline and modular construction.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

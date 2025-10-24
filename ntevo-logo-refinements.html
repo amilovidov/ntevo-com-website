@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ntevo Logo - Horizontal Lockup Refinements</title>
+    <style>
+        :root {
+            --tech-white: #FAFAFA;
+            --tech-black: #0A0A0A;
+            --soft-gray: #6B7280;
+            --warm-gray: #E5E7EB;
+            --bauhaus-blue: #1E40AF;
+            --bauhaus-yellow: #F1C40F;
+            --bauhaus-red: #E63946;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--tech-white);
+            color: var(--tech-black);
+            padding: 3rem 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--soft-gray);
+            margin-bottom: 3rem;
+            font-size: 1rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .version-card {
+            background: white;
+            border: 3px solid var(--warm-gray);
+            border-radius: 16px;
+            padding: 3rem;
+            transition: all 0.3s ease;
+        }
+
+        .version-card:hover {
+            border-color: var(--bauhaus-blue);
+            box-shadow: 0 10px 40px rgba(30, 64, 175, 0.15);
+        }
+
+        .version-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid var(--bauhaus-blue);
+        }
+
+        .version-letter {
+            background: linear-gradient(135deg, var(--bauhaus-blue), var(--bauhaus-red));
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 2.5rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .version-info h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .version-info p {
+            color: var(--soft-gray);
+            font-size: 1.1rem;
+        }
+
+        .logo-showcase {
+            background: var(--tech-white);
+            border: 2px solid var(--warm-gray);
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-showcase img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .analysis {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .analysis-box {
+            background: #F0F9FF;
+            border-left: 4px solid var(--bauhaus-blue);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .analysis-box.pros {
+            background: #F0FDF4;
+            border-left-color: #22C55E;
+        }
+
+        .analysis-box.cons {
+            background: #FEF2F2;
+            border-left-color: #EF4444;
+        }
+
+        .analysis-box h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .analysis-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .analysis-box li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            position: relative;
+            color: var(--soft-gray);
+            line-height: 1.6;
+        }
+
+        .pros li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #22C55E;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .cons li::before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #EF4444;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .spec-card {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            color: var(--soft-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .spec-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--tech-black);
+        }
+
+        .use-case-demo {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--warm-gray);
+        }
+
+        .use-case-demo h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mock-contexts {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .mock-header {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mock-header img {
+            max-height: 50px;
+        }
+
+        .mock-nav {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.9rem;
+            color: var(--soft-gray);
+        }
+
+        .scale-test {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 2rem;
+            display: flex;
+            gap: 2rem;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .scale-item {
+            text-align: center;
+        }
+
+        .scale-item img {
+            display: block;
+            margin: 0 auto 0.5rem;
+        }
+
+        .scale-label {
+            font-size: 0.75rem;
+            color: var(--soft-gray);
+            font-weight: 600;
+        }
+
+        .recommendation {
+            background: linear-gradient(135deg, #FFFBEB, #FEF3C7);
+            border: 2px solid var(--bauhaus-yellow);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .recommendation h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--tech-black);
+        }
+
+        .recommendation p {
+            color: var(--soft-gray);
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .best-for {
+            background: white;
+            border-left: 4px solid var(--bauhaus-yellow);
+            padding: 1rem 1.5rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .best-for strong {
+            color: var(--tech-black);
+        }
+
+        .emoji-icon {
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Horizontal Lockup Refinements</h1>
+        <p class="subtitle">
+            Based on parallel lenses analysis, three refined approaches balancing visual hierarchy, legibility, and brand presence. Each version optimizes different aspects: logo prominence (A), geometric focus (B), or compact efficiency (C).
+        </p>
+
+        <div class="comparison-grid">
+            <!-- Version A: Larger Logo -->
+            <div class="version-card">
+                <div class="version-header">
+                    <div class="version-letter">A</div>
+                    <div class="version-info">
+                        <h2>Larger Logo</h2>
+                        <p>Logo scaled to 180px height - Bold geometric presence balanced with text</p>
+                    </div>
+                </div>
+
+                <div class="logo-showcase">
+                    <img src="public/ntevo-logo-h-versionA.svg" alt="Version A">
+                </div>
+
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <div class="spec-label">Logo Height</div>
+                        <div class="spec-value">180px</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Text Size</div>
+                        <div class="spec-value">36px</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Total Width</div>
+                        <div class="spec-value">650px</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Weight</div>
+                        <div class="spec-value">500</div>
+                    </div>
+                </div>
+
+                <div class="analysis">
+                    <div class="analysis-box pros">
+                        <h3><span class="emoji-icon">✓</span> Strengths</h3>
+                        <ul>
+                            <li>Geometric shapes have strong presence</li>
+                            <li>Logo-to-text ratio feels more balanced (1:1.9)</li>
+                            <li>Shapes don't get "lost" next to text</li>
+                            <li>Works well for hero sections and large displays</li>
+                            <li>Core and rotation are clearly visible</li>
+                        </ul>
+                    </div>
+                    <div class="analysis-box cons">
+                        <h3><span class="emoji-icon">✗</span> Challenges</h3>
+                        <ul>
+                            <li>Takes more horizontal space (650px vs 600px)</li>
+                            <li>Larger minimum width requirement (~350px)</li>
+                            <li>May feel "heavy" in compact contexts</li>
+                            <li>Logo prominence might overshadow text at small sizes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="best-for">
+                    <strong>Best for:</strong> Website hero sections, large displays, presentations, contexts where you want geometric shapes to be the star
+                </div>
+
+                <div class="use-case-demo">
+                    <h3>Scale Test</h3>
+                    <div class="scale-test">
+                        <div class="scale-item">
+                            <img src="public/ntevo-logo-h-versionA.svg" width="325" height="90">
+                            <div class="scale-label">50% (325px)</div>
+                        </div>
+                        <div class="scale-item">
+                            <img src="public/ntevo-logo-h-versionA.svg" width="217" height="60">
+                            <div class="scale-label">33% (217px)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Version B: Lighter Text -->
+            <div class="version-card">
+                <div class="version-header">
+                    <div class="version-letter">B</div>
+                    <div class="version-info">
+                        <h2>Lighter Text <span style="background: var(--bauhaus-yellow); color: var(--tech-black); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.9rem; margin-left: 0.5rem;">RECOMMENDED</span></h2>
+                        <p>Text reduced to 30px, weight 400 - Geometric shapes take visual priority</p>
+                    </div>
+                </div>
+
+                <div class="logo-showcase">
+                    <img src="public/ntevo-logo-h-versionB.svg" alt="Version B">
+                </div>
+
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <div class="spec-label">Logo Height</div>
+                        <div class="spec-value">140px</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Text Size</div>
+                        <div class="spec-value">30px</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Total Width</div>
+                        <div class="spec-value">600px</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Weight</div>
+                        <div class="spec-value">400</div>
+                    </div>
+                </div>
+
+                <div class="recommendation">
+                    <h3><span class="emoji-icon">⭐</span> Why This Works Best</h3>
+                    <p><strong>Balanced visual hierarchy:</strong> Lighter text (30px, weight 400) allows geometric shapes to be the focal point while maintaining excellent legibility.</p>
+                    <p><strong>Bauhaus authenticity:</strong> Matches Bauhaus principle of "form follows function" - shapes are primary, text is supporting element.</p>
+                    <p><strong>Versatile:</strong> Works at standard website header sizes (300px+) while maintaining coherence. Scales cleanly down to mobile.</p>
+                    <p><strong>Professional & modern:</strong> Lighter weight feels contemporary without being too bold or heavy.</p>
+                </div>
+
+                <div class="analysis">
+                    <div class="analysis-box pros">
+                        <h3><span class="emoji-icon">✓</span> Strengths</h3>
+                        <ul>
+                            <li>Best balance between logo and text</li>
+                            <li>Text doesn't compete with geometric shapes</li>
+                            <li>Increased letter-spacing improves readability</li>
+                            <li>Lighter weight = more elegant, less corporate</li>
+                            <li>Compact 600px width fits most contexts</li>
+                            <li>True to Bauhaus design principles</li>
+                        </ul>
+                    </div>
+                    <div class="analysis-box cons">
+                        <h3><span class="emoji-icon">✗</span> Challenges</h3>
+                        <ul>
+                            <li>Lighter text needs clean background (no busy patterns)</li>
+                            <li>May need slight adjustment on colored backgrounds</li>
+                            <li>At very small sizes (< 250px), text gets tight</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="best-for">
+                    <strong>Best for:</strong> Primary website header, email signatures, business cards, most professional contexts - versatile all-around choice
+                </div>
+
+                <div class="use-case-demo">
+                    <h3>In Context: Website Header</h3>
+                    <div class="mock-contexts">
+                        <div class="mock-header">
+                            <img src="public/ntevo-logo-h-versionB.svg" alt="Logo in header">
+                            <div class="mock-nav">
+                                <span>Products</span>
+                                <span>Solutions</span>
+                                <span>About</span>
+                                <span>Contact</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 2rem;">Scale Test</h3>
+                    <div class="scale-test">
+                        <div class="scale-item">
+                            <img src="public/ntevo-logo-h-versionB.svg" width="300" height="70">
+                            <div class="scale-label">50% (300px)</div>
+                        </div>
+                        <div class="scale-item">
+                            <img src="public/ntevo-logo-h-versionB.svg" width="200" height="47">
+                            <div class="scale-label">33% (200px)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Version C: Single-Line Compact -->
+            <div class="version-card">
+                <div class="version-header">
+                    <div class="version-letter">C</div>
+                    <div class="version-info">
+                        <h2>Single-Line Compact</h2>
+                        <p>One line, all caps, 24px - Most space-efficient and modern</p>
+                    </div>
+                </div>
+
+                <div class="logo-showcase">
+                    <img src="public/ntevo-logo-h-versionC.svg" alt="Version C">
+                </div>
+
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <div class="spec-label">Logo Height</div>
+                        <div class="spec-value">120px</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Text Size</div>
+                        <div class="spec-value">24px</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Total Width</div>
+                        <div class="spec-value">650px</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Weight</div>
+                        <div class="spec-value">500</div>
+                    </div>
+                </div>
+
+                <div class="analysis">
+                    <div class="analysis-box pros">
+                        <h3><span class="emoji-icon">✓</span> Strengths</h3>
+                        <ul>
+                            <li>Most compact vertical height (120px)</li>
+                            <li>Modern single-line treatment</li>
+                            <li>All-caps with letter-spacing = tech/startup vibe</li>
+                            <li>Works well in tight horizontal spaces</li>
+                            <li>Clean horizontal flow, easy to scan</li>
+                            <li>Good for mobile headers (single line)</li>
+                        </ul>
+                    </div>
+                    <div class="analysis-box cons">
+                        <h3><span class="emoji-icon">✗</span> Challenges</h3>
+                        <ul>
+                            <li>Text is quite small (24px) - legibility concern</li>
+                            <li>All caps can feel less elegant than mixed case</li>
+                            <li>Long single line creates stretched feeling</li>
+                            <li>Logo is smallest (120px) - less geometric presence</li>
+                            <li>At small sizes, text becomes very hard to read</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="best-for">
+                    <strong>Best for:</strong> Mobile-first designs, tight spaces, modern tech aesthetic, footer logos, secondary placements
+                </div>
+
+                <div class="use-case-demo">
+                    <h3>Scale Test</h3>
+                    <div class="scale-test">
+                        <div class="scale-item">
+                            <img src="public/ntevo-logo-h-versionC.svg" width="325" height="60">
+                            <div class="scale-label">50% (325px)</div>
+                        </div>
+                        <div class="scale-item">
+                            <img src="public/ntevo-logo-h-versionC.svg" width="217" height="40">
+                            <div class="scale-label">33% (217px)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

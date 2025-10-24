@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- V2: Very tight - shapes almost touching center -->
+
+  <!-- Center core (more prominent) -->
+  <circle cx="100" cy="100" r="8" fill="#0A0A0A"/>
+
+  <!-- Yellow Circle (0° - top) -->
+  <circle cx="100" cy="55" r="26" fill="#F1C40F"/>
+
+  <!-- Blue Square (120° - bottom left, diamond) -->
+  <g transform="translate(61, 139) rotate(45)">
+    <rect x="-26" y="-26" width="52" height="52" fill="#1E40AF"/>
+  </g>
+
+  <!-- Red Triangle (240° - bottom right, pointing up) -->
+  <polygon points="139,139 158,172 120,172" fill="#E63946"/>
+</svg>

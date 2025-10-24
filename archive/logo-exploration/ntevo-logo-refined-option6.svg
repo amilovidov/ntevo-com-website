@@ -1,0 +1,14 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Refined 6: Spiral Evolution - Shapes arranged in expanding spiral suggesting growth -->
+
+  <!-- Inner: Yellow Circle (small radius) -->
+  <circle cx="100" cy="85" r="20" fill="#F1C40F"/>
+
+  <!-- Mid: Blue Square (medium radius, 45° rotation) -->
+  <g transform="translate(125, 105) rotate(45)">
+    <rect x="-21" y="-21" width="42" height="42" fill="#1E40AF"/>
+  </g>
+
+  <!-- Outer: Red Triangle (large radius) -->
+  <polygon points="70,135 85,160 55,160" fill="#E63946"/>
+</svg>

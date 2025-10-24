@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ntevo Logo - Refined Bauhaus Concepts for "Integrity Evolution"</title>
+    <style>
+        :root {
+            --tech-white: #FAFAFA;
+            --tech-black: #0A0A0A;
+            --soft-gray: #6B7280;
+            --warm-gray: #E5E7EB;
+            --bauhaus-red: #E63946;
+            --bauhaus-yellow: #F1C40F;
+            --bauhaus-blue: #1E40AF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--tech-white);
+            color: var(--tech-black);
+            padding: 3rem 2rem;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .brand-name {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--bauhaus-blue);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--soft-gray);
+            margin-bottom: 3rem;
+            font-size: 1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .concept-box {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .concept-box h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--tech-black);
+        }
+
+        .concept-box p {
+            font-size: 0.85rem;
+            color: var(--soft-gray);
+            line-height: 1.5;
+        }
+
+        .logos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .logo-card {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .logo-card:hover {
+            border-color: var(--bauhaus-blue);
+            box-shadow: 0 8px 30px rgba(30, 64, 175, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .logo-number {
+            display: inline-block;
+            background: var(--bauhaus-blue);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            line-height: 32px;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .logo-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--tech-black);
+        }
+
+        .logo-description {
+            font-size: 0.9rem;
+            color: var(--soft-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            min-height: 80px;
+        }
+
+        .logo-preview {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 1.5rem;
+            display: block;
+            background: white;
+            border: 1px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .brand-connection {
+            background: #F0F9FF;
+            border-left: 4px solid var(--bauhaus-blue);
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .brand-connection strong {
+            color: var(--bauhaus-blue);
+        }
+
+        .size-variants {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1rem;
+            border-top: 1px solid var(--warm-gray);
+        }
+
+        .size-variant {
+            text-align: center;
+        }
+
+        .size-variant img {
+            background: white;
+            border: 1px solid var(--warm-gray);
+            border-radius: 4px;
+            padding: 0.5rem;
+        }
+
+        .size-label {
+            font-size: 0.7rem;
+            color: var(--soft-gray);
+            margin-top: 0.25rem;
+        }
+
+        .bauhaus-note {
+            background: #FFFBEB;
+            border: 2px solid var(--bauhaus-yellow);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .bauhaus-note h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--tech-black);
+        }
+
+        .bauhaus-note ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bauhaus-note li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            color: var(--soft-gray);
+            line-height: 1.6;
+        }
+
+        .bauhaus-note li::before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: var(--bauhaus-yellow);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Refined Logo Concepts</h1>
+        <div class="brand-name">Integrity Evolution</div>
+        <p class="subtitle">
+            Exploring the rotating wheel motif through a Bauhaus lens, emphasizing mathematical precision and geometric relationships that reflect both integrity (wholeness, alignment) and evolution (transformation, progression).
+        </p>
+
+        <div class="bauhaus-note">
+            <h3>Bauhaus Design Principles Applied:</h3>
+            <ul>
+                <li><strong>Form follows function</strong> - Each shape positioned with mathematical precision</li>
+                <li><strong>Primary colors + black</strong> - Yellow, blue, red with black accents</li>
+                <li><strong>Geometric purity</strong> - Clean circles, squares, triangles without embellishment</li>
+                <li><strong>Dynamic balance</strong> - Asymmetry creating visual tension and movement</li>
+                <li><strong>Rationalist approach</strong> - Specific rotation angles (30°, 45°, 90°, 120°)</li>
+            </ul>
+        </div>
+
+        <div class="concept-grid">
+            <div class="concept-box">
+                <h3>🔵 Integrity</h3>
+                <p>Wholeness, completeness, core alignment, center point, coherence</p>
+            </div>
+            <div class="concept-box">
+                <h3>🔄 Evolution</h3>
+                <p>Transformation, rotation, progression, cycle, continuous improvement</p>
+            </div>
+        </div>
+
+        <div class="logos-grid">
+            <div class="logo-card">
+                <div class="logo-number">1</div>
+                <h3 class="logo-title">Perfect Rotation</h3>
+                <p class="logo-description">
+                    Shapes positioned at exact 120° intervals around center point. Mathematical perfection suggesting systematic evolution from a core of integrity.
+                </p>
+                <div class="brand-connection">
+                    <strong>Integrity:</strong> Central anchor point<br>
+                    <strong>Evolution:</strong> 120° rotational symmetry
+                </div>
+                <img src="public/ntevo-logo-refined-option1.svg" alt="Perfect Rotation" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option1.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option1.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option1.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <div class="logo-number">2</div>
+                <h3 class="logo-title">Clockwise Evolution</h3>
+                <p class="logo-description">
+                    Clock positions (12, 3, 9) with subtle circular guide. Clear directional movement. Diamond square suggests pivot point of transformation.
+                </p>
+                <div class="brand-connection">
+                    <strong>Integrity:</strong> Circular path maintaining wholeness<br>
+                    <strong>Evolution:</strong> Clockwise progression through time
+                </div>
+                <img src="public/ntevo-logo-refined-option2.svg" alt="Clockwise Evolution" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option2.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option2.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option2.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <div class="logo-number">3</div>
+                <h3 class="logo-title">Core Integrity ⭐</h3>
+                <p class="logo-description">
+                    Black center circle (integrity core) with colored shapes orbiting. Most literal interpretation of brand name. Strong conceptual clarity.
+                </p>
+                <div class="brand-connection">
+                    <strong>Integrity:</strong> Solid black central core<br>
+                    <strong>Evolution:</strong> Shapes orbiting and transforming around core
+                </div>
+                <img src="public/ntevo-logo-refined-option3.svg" alt="Core Integrity" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option3.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option3.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option3.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <div class="logo-number">4</div>
+                <h3 class="logo-title">Angular Momentum</h3>
+                <p class="logo-description">
+                    Pure Bauhaus - no guide lines. Each shape rotated at specific angles (30°, 120°) creating dynamic tension. Most abstract and modern.
+                </p>
+                <div class="brand-connection">
+                    <strong>Integrity:</strong> Invisible gravitational center<br>
+                    <strong>Evolution:</strong> Angular rotations suggesting motion
+                </div>
+                <img src="public/ntevo-logo-refined-option4.svg" alt="Angular Momentum" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option4.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option4.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option4.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <div class="logo-number">5</div>
+                <h3 class="logo-title">Three-Stage Evolution</h3>
+                <p class="logo-description">
+                    Linear progression with directional arrows. Clear narrative: origin → transformation → advancement. Works well horizontally in headers.
+                </p>
+                <div class="brand-connection">
+                    <strong>Integrity:</strong> Coherent linear path<br>
+                    <strong>Evolution:</strong> Clear stages of transformation
+                </div>
+                <img src="public/ntevo-logo-refined-option5.svg" alt="Three-Stage Evolution" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option5.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option5.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option5.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card">
+                <div class="logo-number">6</div>
+                <h3 class="logo-title">Spiral Evolution</h3>
+                <p class="logo-description">
+                    Expanding spiral arrangement suggesting growth and continuous improvement. Shapes increase in distance from center, showing evolution as expansion.
+                </p>
+                <div class="brand-connection">
+                    <strong>Integrity:</strong> Cohesive spiral pattern<br>
+                    <strong>Evolution:</strong> Outward expansion and growth
+                </div>
+                <img src="public/ntevo-logo-refined-option6.svg" alt="Spiral Evolution" class="logo-preview">
+                <div class="size-variants">
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option6.svg" width="48" height="48">
+                        <div class="size-label">48px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option6.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-variant">
+                        <img src="public/ntevo-logo-refined-option6.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

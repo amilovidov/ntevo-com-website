@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Option 1: Orbital - Simple circular orbit -->
+
+  <!-- Sun (Yellow Circle) - Center -->
+  <circle cx="100" cy="100" r="30" fill="#F1C40F"/>
+
+  <!-- Earth orbit path (invisible) -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="2,2"/>
+
+  <!-- Earth (Blue Square) - Orbiting Sun -->
+  <rect x="140" y="80" width="20" height="20" fill="#1E40AF"/>
+
+  <!-- Moon orbit path around Earth (invisible) -->
+  <circle cx="150" cy="90" r="15" fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="1,1"/>
+
+  <!-- Moon (Red Triangle) - Orbiting Earth -->
+  <polygon points="150,68 158,78 142,78" fill="#E63946"/>
+</svg>

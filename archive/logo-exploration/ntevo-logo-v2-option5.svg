@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Option 5: Balance Beam - Horizontal line with shapes touching/overlapping -->
+
+  <!-- Invisible balance line for reference -->
+  <line x1="40" y1="100" x2="160" y2="100" stroke="#E5E7EB" stroke-width="2" opacity="0.3"/>
+
+  <!-- Yellow Circle (left, on the line) -->
+  <circle cx="65" cy="100" r="24" fill="#F1C40F"/>
+
+  <!-- Blue Square (center, diamond orientation on line) -->
+  <g transform="translate(100, 100) rotate(45)">
+    <rect x="-22" y="-22" width="44" height="44" fill="#1E40AF"/>
+  </g>
+
+  <!-- Red Triangle (right, balanced on point) -->
+  <polygon points="135,76 157,124 113,124" fill="#E63946"/>
+</svg>

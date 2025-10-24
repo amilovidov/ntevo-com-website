@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Refined 2: Clockwise Evolution - Shapes at 0°, 90°, 270° suggesting clockwise motion -->
+
+  <!-- Subtle circular guide (evolution path) -->
+  <circle cx="100" cy="100" r="50" fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+
+  <!-- Yellow Circle (12 o'clock) -->
+  <circle cx="100" cy="50" r="20" fill="#F1C40F"/>
+
+  <!-- Blue Square (3 o'clock, rotated 45°) -->
+  <g transform="translate(150, 100) rotate(45)">
+    <rect x="-20" y="-20" width="40" height="40" fill="#1E40AF"/>
+  </g>
+
+  <!-- Red Triangle (9 o'clock, pointing clockwise/right) -->
+  <polygon points="36,100 50,115 50,85" fill="#E63946"/>
+</svg>

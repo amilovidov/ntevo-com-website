@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Option 2: Motion Trails - Faint echoes showing rotation/evolution -->
+
+  <!-- Motion trails (ghosted previous positions, 12% opacity) -->
+  <!-- Circle trail (rotated -15° from current position) -->
+  <circle cx="286" cy="167" r="75" fill="#F1C40F" opacity="0.12"/>
+
+  <!-- Square trail (rotated -15° from current position) -->
+  <g transform="translate(140, 330) rotate(45)" opacity="0.12">
+    <rect x="-75" y="-75" width="150" height="150" fill="#1E40AF"/>
+  </g>
+
+  <!-- Triangle trail (rotated -15° from current position) -->
+  <polygon points="363,315 448,437 278,437" fill="#E63946" opacity="0.12"/>
+
+  <!-- Current positions (full opacity) -->
+  <!-- Yellow Circle (0° - top) -->
+  <circle cx="256" cy="150" r="75" fill="#F1C40F"/>
+
+  <!-- Blue Square (120° - bottom left, diamond) -->
+  <g transform="translate(164, 348) rotate(45)">
+    <rect x="-75" y="-75" width="150" height="150" fill="#1E40AF"/>
+  </g>
+
+  <!-- Red Triangle (240° - bottom right) -->
+  <polygon points="348,348 433,470 263,470" fill="#E63946"/>
+</svg>

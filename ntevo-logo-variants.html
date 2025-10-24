@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ntevo Logo System - 3 Variants</title>
+    <style>
+        :root {
+            --tech-white: #FAFAFA;
+            --tech-black: #0A0A0A;
+            --soft-gray: #6B7280;
+            --warm-gray: #E5E7EB;
+            --bauhaus-blue: #1E40AF;
+            --bauhaus-yellow: #F1C40F;
+            --bauhaus-red: #E63946;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--tech-white);
+            color: var(--tech-black);
+            padding: 3rem 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--soft-gray);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .variant-section {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .variant-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid var(--bauhaus-blue);
+        }
+
+        .variant-number {
+            background: var(--bauhaus-blue);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        .variant-info h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .variant-info p {
+            color: var(--soft-gray);
+            font-size: 1rem;
+        }
+
+        .preview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .preview-box {
+            background: var(--tech-white);
+            border: 2px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .preview-label {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--tech-black);
+            font-size: 1.1rem;
+        }
+
+        .preview-box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .use-cases {
+            background: #F0F9FF;
+            border-left: 4px solid var(--bauhaus-blue);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+
+        .use-cases h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--bauhaus-blue);
+        }
+
+        .use-cases ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .use-cases li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            color: var(--soft-gray);
+            line-height: 1.6;
+        }
+
+        .use-cases li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--bauhaus-blue);
+            font-weight: bold;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .spec-item {
+            background: white;
+            border: 1px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .spec-label {
+            font-size: 0.85rem;
+            color: var(--soft-gray);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .spec-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--tech-black);
+        }
+
+        .context-examples {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--warm-gray);
+        }
+
+        .context-examples h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mock-header {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .mock-header img {
+            height: 50px;
+        }
+
+        .mock-nav {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.9rem;
+            color: var(--soft-gray);
+        }
+
+        .size-scale {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid var(--warm-gray);
+        }
+
+        .size-item {
+            text-align: center;
+        }
+
+        .size-item img {
+            display: block;
+            margin: 0 auto 0.5rem;
+        }
+
+        .size-label-sm {
+            font-size: 0.75rem;
+            color: var(--soft-gray);
+        }
+
+        .recommendation-badge {
+            display: inline-block;
+            background: var(--bauhaus-yellow);
+            color: var(--tech-black);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ntevo Logo System</h1>
+        <p class="subtitle">
+            Three variants optimized for different contexts: Horizontal for headers, Vertical for square spaces, Icon for small sizes and app icons.
+        </p>
+
+        <!-- Variant 1: Horizontal Lockup -->
+        <div class="variant-section">
+            <div class="variant-header">
+                <div class="variant-number">1</div>
+                <div class="variant-info">
+                    <h2>Horizontal Lockup <span class="recommendation-badge">PRIMARY</span></h2>
+                    <p>Logo + wordmark side-by-side. Best for website headers, email signatures, and business cards.</p>
+                </div>
+            </div>
+
+            <div class="preview-grid">
+                <div class="preview-box">
+                    <div class="preview-label">Full Size (600×140px)</div>
+                    <img src="public/ntevo-logo-horizontal.svg" alt="Horizontal Logo">
+                </div>
+                <div class="preview-box">
+                    <div class="preview-label">On Colored Background</div>
+                    <div style="background: #1E40AF; padding: 2rem; border-radius: 8px;">
+                        <img src="public/ntevo-logo-horizontal.svg" alt="Horizontal Logo" style="filter: brightness(0) invert(1);">
+                    </div>
+                </div>
+            </div>
+
+            <div class="use-cases">
+                <h3>Best Use Cases</h3>
+                <ul>
+                    <li>Website header (primary navigation)</li>
+                    <li>Email signatures</li>
+                    <li>Business cards (horizontal layout)</li>
+                    <li>Letterhead and documents</li>
+                    <li>Presentation title slides</li>
+                    <li>LinkedIn company banner</li>
+                </ul>
+            </div>
+
+            <div class="specs">
+                <div class="spec-item">
+                    <div class="spec-label">Dimensions</div>
+                    <div class="spec-value">600×140px</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Aspect Ratio</div>
+                    <div class="spec-value">4.3:1</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Min Width</div>
+                    <div class="spec-value">300px</div>
+                </div>
+            </div>
+
+            <div class="context-examples">
+                <h3>In Context: Website Header</h3>
+                <div class="mock-header">
+                    <img src="public/ntevo-logo-horizontal.svg" alt="Logo in header">
+                    <div class="mock-nav">
+                        <span>Products</span>
+                        <span>Solutions</span>
+                        <span>About</span>
+                        <span>Contact</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Variant 2: Vertical Lockup -->
+        <div class="variant-section">
+            <div class="variant-header">
+                <div class="variant-number">2</div>
+                <div class="variant-info">
+                    <h2>Vertical Lockup</h2>
+                    <p>Logo on top, wordmark below. Perfect for square spaces and social media profiles.</p>
+                </div>
+            </div>
+
+            <div class="preview-grid">
+                <div class="preview-box">
+                    <div class="preview-label">Full Size (280×340px)</div>
+                    <img src="public/ntevo-logo-vertical.svg" alt="Vertical Logo" style="max-height: 340px;">
+                </div>
+                <div class="preview-box">
+                    <div class="preview-label">Square Format Example</div>
+                    <div style="background: var(--tech-white); padding: 2rem; border-radius: 8px; display: flex; align-items: center; justify-content: center; min-height: 340px;">
+                        <img src="public/ntevo-logo-vertical.svg" alt="Vertical Logo" style="max-height: 280px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="use-cases">
+                <h3>Best Use Cases</h3>
+                <ul>
+                    <li>Instagram posts and stories</li>
+                    <li>LinkedIn company page profile</li>
+                    <li>Business cards (vertical layout)</li>
+                    <li>Product packaging</li>
+                    <li>App store screenshots</li>
+                    <li>Square promotional materials</li>
+                </ul>
+            </div>
+
+            <div class="specs">
+                <div class="spec-item">
+                    <div class="spec-label">Dimensions</div>
+                    <div class="spec-value">280×340px</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Aspect Ratio</div>
+                    <div class="spec-value">~1:1.2</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Min Width</div>
+                    <div class="spec-value">200px</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Variant 3: Icon Only -->
+        <div class="variant-section">
+            <div class="variant-header">
+                <div class="variant-number">3</div>
+                <div class="variant-info">
+                    <h2>Icon Only (Logomark)</h2>
+                    <p>Pure geometric logo. Optimized for favicons, app icons, and any context where space is limited.</p>
+                </div>
+            </div>
+
+            <div class="preview-grid">
+                <div class="preview-box">
+                    <div class="preview-label">Full Size (512×512px)</div>
+                    <img src="public/ntevo-logo-icon.svg" alt="Icon Logo" style="max-width: 300px;">
+                </div>
+                <div class="preview-box">
+                    <div class="preview-label">Size Scale Test</div>
+                    <div class="size-scale">
+                        <div class="size-item">
+                            <img src="public/ntevo-logo-icon.svg" width="128" height="128">
+                            <div class="size-label-sm">128px</div>
+                        </div>
+                        <div class="size-item">
+                            <img src="public/ntevo-logo-icon.svg" width="64" height="64">
+                            <div class="size-label-sm">64px</div>
+                        </div>
+                        <div class="size-item">
+                            <img src="public/ntevo-logo-icon.svg" width="32" height="32">
+                            <div class="size-label-sm">32px</div>
+                        </div>
+                        <div class="size-item">
+                            <img src="public/ntevo-logo-icon.svg" width="16" height="16">
+                            <div class="size-label-sm">16px</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="use-cases">
+                <h3>Best Use Cases</h3>
+                <ul>
+                    <li>Favicon (browser tab icon)</li>
+                    <li>App icon (iOS/Android)</li>
+                    <li>Social media avatars (Twitter, LinkedIn)</li>
+                    <li>Browser extension icon</li>
+                    <li>Watermarks</li>
+                    <li>Loading spinners and micro-interactions</li>
+                </ul>
+            </div>
+
+            <div class="specs">
+                <div class="spec-item">
+                    <div class="spec-label">Dimensions</div>
+                    <div class="spec-value">512×512px</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Aspect Ratio</div>
+                    <div class="spec-value">1:1</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Scalability</div>
+                    <div class="spec-value">16px → 512px</div>
+                </div>
+            </div>
+
+            <div class="context-examples">
+                <h3>In Context: Browser Tab & App Icon</h3>
+                <div style="display: flex; gap: 2rem; align-items: center; justify-content: center; padding: 2rem; background: white; border: 2px solid var(--warm-gray); border-radius: 8px;">
+                    <div style="text-align: center;">
+                        <div style="background: #F3F4F6; padding: 0.5rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <img src="public/ntevo-logo-icon.svg" width="16" height="16">
+                            <span style="font-size: 0.85rem; color: var(--soft-gray);">ntevo.com</span>
+                        </div>
+                        <div style="font-size: 0.75rem; color: var(--soft-gray);">Browser Favicon</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1rem; border-radius: 20px; display: inline-block; margin-bottom: 0.5rem;">
+                            <img src="public/ntevo-logo-icon.svg" width="64" height="64">
+                        </div>
+                        <div style="font-size: 0.75rem; color: var(--soft-gray);">iOS App Icon</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: white; border: 1px solid var(--warm-gray); padding: 0.5rem; border-radius: 50%; display: inline-block; margin-bottom: 0.5rem;">
+                            <img src="public/ntevo-logo-icon.svg" width="48" height="48">
+                        </div>
+                        <div style="font-size: 0.75rem; color: var(--soft-gray);">Social Avatar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

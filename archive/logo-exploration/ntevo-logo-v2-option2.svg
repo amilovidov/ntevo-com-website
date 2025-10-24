@@ -1,0 +1,12 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Option 2: Triad - Three shapes forming triangle composition -->
+
+  <!-- Yellow Circle (top) -->
+  <circle cx="100" cy="65" r="22" fill="#F1C40F"/>
+
+  <!-- Blue Square (bottom left) -->
+  <rect x="58" y="118" width="44" height="44" fill="#1E40AF"/>
+
+  <!-- Red Triangle (bottom right) - pointing up -->
+  <polygon points="140,162 118,118 162,118" fill="#E63946"/>
+</svg>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ntevo Logo 512x512 - Sizing Comparison</title>
+    <style>
+        :root {
+            --tech-white: #FAFAFA;
+            --tech-black: #0A0A0A;
+            --soft-gray: #6B7280;
+            --warm-gray: #E5E7EB;
+            --bauhaus-blue: #1E40AF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--tech-white);
+            color: var(--tech-black);
+            padding: 3rem 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--soft-gray);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .logo-option {
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .logo-option:hover {
+            border-color: var(--bauhaus-blue);
+            box-shadow: 0 8px 30px rgba(30, 64, 175, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .option-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .option-number {
+            background: var(--bauhaus-blue);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .option-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .option-description {
+            color: var(--soft-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .logo-preview-large {
+            width: 512px;
+            height: 512px;
+            margin: 0 auto 1.5rem;
+            display: block;
+            background: white;
+            border: 2px solid var(--warm-gray);
+            border-radius: 12px;
+        }
+
+        .size-demo {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            background: var(--tech-white);
+            border-radius: 8px;
+            border-top: 2px solid var(--warm-gray);
+        }
+
+        .size-item {
+            text-align: center;
+        }
+
+        .size-item img {
+            background: white;
+            border: 1px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 0.5rem;
+            display: block;
+            margin: 0 auto 0.5rem;
+        }
+
+        .size-label {
+            font-size: 0.8rem;
+            color: var(--soft-gray);
+            font-weight: 600;
+        }
+
+        .recommendation {
+            background: #F0F9FF;
+            border-left: 4px solid var(--bauhaus-blue);
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .recommendation strong {
+            color: var(--bauhaus-blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Logo Sizing at 512×512</h1>
+        <p class="subtitle">Comparing different scales to find optimal balance between presence and whitespace</p>
+
+        <div class="comparison-grid">
+            <div class="logo-option">
+                <div class="option-header">
+                    <div class="option-number">1</div>
+                    <h3 class="option-title">Balanced Spacing</h3>
+                </div>
+                <p class="option-description">
+                    Good breathing room. Professional and clean. Shapes are 70px, orbit radius ~116px. Works well at all sizes but may feel a bit conservative.
+                </p>
+                <img src="public/ntevo-logo-512-v1.svg" alt="Version 1" class="logo-preview-large">
+                <div class="size-demo">
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v1.svg" width="128" height="128">
+                        <div class="size-label">128px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v1.svg" width="64" height="64">
+                        <div class="size-label">64px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v1.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v1.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-option">
+                <div class="option-header">
+                    <div class="option-number">2</div>
+                    <h3 class="option-title">Tighter Orbit ⭐</h3>
+                </div>
+                <div class="recommendation">
+                    <strong>Recommended:</strong> Best balance of presence and spacing. Core is visible but not dominant. Shapes feel connected.
+                </div>
+                <p class="option-description">
+                    More cohesive feeling. Shapes 75px, visible center core (18px). Better visual unity. Strong brand presence without feeling cramped.
+                </p>
+                <img src="public/ntevo-logo-512-v2.svg" alt="Version 2" class="logo-preview-large">
+                <div class="size-demo">
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v2.svg" width="128" height="128">
+                        <div class="size-label">128px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v2.svg" width="64" height="64">
+                        <div class="size-label">64px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v2.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v2.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-option">
+                <div class="option-header">
+                    <div class="option-number">3</div>
+                    <h3 class="option-title">Maximum Scale</h3>
+                </div>
+                <p class="option-description">
+                    Bold and aggressive. Shapes 85px, large core (24px). Fills canvas edge-to-edge. High impact but may feel crowded for some applications.
+                </p>
+                <img src="public/ntevo-logo-512-v3.svg" alt="Version 3" class="logo-preview-large">
+                <div class="size-demo">
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v3.svg" width="128" height="128">
+                        <div class="size-label">128px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v3.svg" width="64" height="64">
+                        <div class="size-label">64px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v3.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v3.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-option">
+                <div class="option-header">
+                    <div class="option-number">4</div>
+                    <h3 class="option-title">With Motion Guides</h3>
+                </div>
+                <p class="option-description">
+                    Subtle circular guide showing evolution path. Shapes 72px. Reinforces "rotation" concept. Good for animated versions but may be too detailed for small sizes.
+                </p>
+                <img src="public/ntevo-logo-512-v4.svg" alt="Version 4" class="logo-preview-large">
+                <div class="size-demo">
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v4.svg" width="128" height="128">
+                        <div class="size-label">128px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v4.svg" width="64" height="64">
+                        <div class="size-label">64px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v4.svg" width="32" height="32">
+                        <div class="size-label">32px</div>
+                    </div>
+                    <div class="size-item">
+                        <img src="public/ntevo-logo-512-v4.svg" width="16" height="16">
+                        <div class="size-label">16px</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

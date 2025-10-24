@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- V1: Balanced sizing at 512x512 -->
+
+  <!-- Center point (integrity core) -->
+  <circle cx="256" cy="256" r="10" fill="#0A0A0A" opacity="0.4"/>
+
+  <!-- Yellow Circle (0° - top) -->
+  <circle cx="256" cy="140" r="70" fill="#F1C40F"/>
+
+  <!-- Blue Square (120° - bottom left, rotated 45° diamond) -->
+  <g transform="translate(155, 345) rotate(45)">
+    <rect x="-70" y="-70" width="140" height="140" fill="#1E40AF"/>
+  </g>
+
+  <!-- Red Triangle (240° - bottom right, pointing up) -->
+  <polygon points="357,345 432,460 282,460" fill="#E63946"/>
+</svg>

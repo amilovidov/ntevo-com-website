@@ -9,6 +9,7 @@
     <meta name="author" content="Integrity Evolution Inc">
 
     <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/ntevo-logo-final.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -152,6 +153,16 @@
             animation-delay: 1.5s;
         }
 
+        .header-logo-icon {
+            height: 45px;
+            width: 45px;
+            transition: all 0.3s ease;
+        }
+
+        .header-logo-icon:hover {
+            transform: scale(1.05);
+        }
+
         .mission-statement {
             font-family: 'Inter', sans-serif;
             font-size: 0.8rem;
@@ -195,7 +206,7 @@
         .hero {
             min-height: 50vh;
             display: grid;
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 1fr 200px;
             gap: 3rem;
             align-items: center;
             justify-content: center;
@@ -236,7 +247,7 @@
         }
 
         .hero-title .gradient-text {
-            background: linear-gradient(135deg, var(--tech-blue), var(--accent-violet));
+            background: linear-gradient(135deg, var(--bauhaus-red), var(--bauhaus-yellow), var(--bauhaus-blue));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -723,19 +734,14 @@
     <!-- Header -->
     <header class="top-app-bar">
         <div class="logo-container">
-            <div class="bauhaus-shape-left"></div>
+            <img src="/ntevo-logo-final.svg" alt="ntevo" class="header-logo-icon">
             <h1 class="app-title">Integrity Evolution</h1>
-            <div class="bauhaus-shape-right">
-                <div class="bauhaus-triangle"></div>
-                <div class="bauhaus-square"></div>
-            </div>
         </div>
         <div class="mission-statement">Expanding memory</div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="/argo_logo.png" alt="Argo Logo" class="hero-logo">
         <div class="hero-content">
             <h2 class="hero-title">
                 Elevate your <span class="gradient-text">Sales, Marketing & Customer Success</span> with Emotionally Intelligent Agents
@@ -748,6 +754,7 @@
                 <span class="material-symbols-outlined">arrow_forward</span>
             </button>
         </div>
+        <img src="/ntevo-logo-final.svg" alt="ntevo Logo" class="hero-logo">
     </section>
 
     <!-- How Emotional AI Helps Section -->

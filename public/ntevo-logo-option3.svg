@@ -1,0 +1,14 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Option 3: Minimalist - Clean geometric without orbit lines -->
+
+  <!-- Sun (Yellow Circle) - Center, larger -->
+  <circle cx="100" cy="100" r="40" fill="#F1C40F"/>
+
+  <!-- Earth (Blue Square) - Right side, rotating 15deg -->
+  <g transform="translate(155, 95) rotate(15)">
+    <rect x="-12" y="-12" width="24" height="24" fill="#1E40AF"/>
+  </g>
+
+  <!-- Moon (Red Triangle) - Near Earth, pointing toward Sun -->
+  <polygon points="170,75 182,90 158,90" fill="#E63946"/>
+</svg>

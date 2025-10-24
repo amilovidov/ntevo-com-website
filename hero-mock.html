@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section Mock - Argo Logo Placement Options</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <style>
+        :root {
+            --tech-white: #FAFAFA;
+            --pure-white: #FFFFFF;
+            --tech-black: #0A0A0A;
+            --soft-gray: #6B7280;
+            --tech-blue: #1E40AF;
+            --accent-violet: #7C3AED;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--tech-white);
+            color: var(--tech-black);
+            padding: 2rem;
+        }
+
+        .mock-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .option {
+            background: var(--pure-white);
+            border: 2px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .option-label {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--tech-blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            position: relative;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 900px;
+        }
+
+        .hero-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--tech-black);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--tech-blue), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--soft-gray);
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        .hero-cta {
+            background: var(--tech-blue);
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .hero-cta:hover {
+            background: var(--accent-violet);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3);
+        }
+
+        /* Option 1: Logo above title */
+        .option-1 .argo-logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            display: block;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Option 2: Logo left of content */
+        .option-2 .hero {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .option-2 .argo-logo {
+            width: 180px;
+            height: 180px;
+            border-radius: 32px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .option-2 .hero-content {
+            text-align: left;
+        }
+
+        /* Option 3: Logo as floating element */
+        .option-3 .argo-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            opacity: 0.9;
+        }
+
+        /* Option 4: Logo integrated in title */
+        .option-4 .hero-title-with-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-4 .argo-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+
+        .option-4 .hero-title {
+            margin-bottom: 0;
+        }
+
+        /* Option 5: Large background logo */
+        .option-5 .hero {
+            position: relative;
+        }
+
+        .option-5 .argo-logo-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            opacity: 0.05;
+            border-radius: 60px;
+            z-index: 0;
+        }
+
+        .option-5 .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .description {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #F3F4F6;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: var(--soft-gray);
+        }
+
+        @media (max-width: 768px) {
+            .option-2 .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .option-2 .hero-content {
+                text-align: center;
+            }
+
+            .option-2 .argo-logo {
+                margin: 0 auto 2rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .option-4 .hero-title-with-logo {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mock-container">
+        <h1>Hero Section Mock - Argo Logo Placement Options</h1>
+
+        <!-- Option 1: Logo above title (centered) -->
+        <div class="option option-1">
+            <div class="option-label">Option 1: Centered Above Title</div>
+            <section class="hero">
+                <div class="hero-content">
+                    <img src="/argo_logo.png" alt="Argo Logo" class="argo-logo">
+                    <h2 class="hero-title">
+                        Elevate your <span class="gradient-text">Sales, Marketing & Customer Success</span> with Emotional Intelligent Agents
+                    </h2>
+                    <p class="hero-subtitle">
+                        Drive customer engagement, retention, and revenue with AI that truly understands your customers
+                    </p>
+                    <button class="hero-cta">
+                        Contact Us
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </section>
+            <div class="description">
+                <strong>Classic approach:</strong> Logo prominently displayed above the title. Clean, centered, professional. Works well on all screen sizes.
+            </div>
+        </div>
+
+        <!-- Option 2: Logo left of content -->
+        <div class="option option-2">
+            <div class="option-label">Option 2: Side-by-Side Layout</div>
+            <section class="hero">
+                <img src="/argo_logo.png" alt="Argo Logo" class="argo-logo">
+                <div class="hero-content">
+                    <h2 class="hero-title">
+                        Elevate your <span class="gradient-text">Sales, Marketing & Customer Success</span> with Emotional Intelligent Agents
+                    </h2>
+                    <p class="hero-subtitle">
+                        Drive customer engagement, retention, and revenue with AI that truly understands your customers
+                    </p>
+                    <button class="hero-cta">
+                        Contact Us
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </section>
+            <div class="description">
+                <strong>Bold approach:</strong> Large logo on the left creates visual balance. Modern layout that emphasizes brand identity. Stacks vertically on mobile.
+            </div>
+        </div>
+
+        <!-- Option 3: Floating corner logo -->
+        <div class="option option-3">
+            <div class="option-label">Option 3: Floating Corner</div>
+            <section class="hero">
+                <img src="/argo_logo.png" alt="Argo Logo" class="argo-logo">
+                <div class="hero-content">
+                    <h2 class="hero-title">
+                        Elevate your <span class="gradient-text">Sales, Marketing & Customer Success</span> with Emotional Intelligent Agents
+                    </h2>
+                    <p class="hero-subtitle">
+                        Drive customer engagement, retention, and revenue with AI that truly understands your customers
+                    </p>
+                    <button class="hero-cta">
+                        Contact Us
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </section>
+            <div class="description">
+                <strong>Subtle approach:</strong> Logo floats in top-right corner. Doesn't compete with text hierarchy. Maintains focus on message while showing brand.
+            </div>
+        </div>
+
+        <!-- Option 4: Logo integrated with title -->
+        <div class="option option-4">
+            <div class="option-label">Option 4: Integrated with Title</div>
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="hero-title-with-logo">
+                        <img src="/argo_logo.png" alt="Argo Logo" class="argo-logo">
+                        <h2 class="hero-title">
+                            Elevate your <span class="gradient-text">Sales, Marketing & Customer Success</span>
+                        </h2>
+                    </div>
+                    <p class="hero-subtitle">
+                        Drive customer engagement, retention, and revenue with AI that truly understands your customers
+                    </p>
+                    <button class="hero-cta">
+                        Contact Us
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </section>
+            <div class="description">
+                <strong>Integrated approach:</strong> Logo sits beside the title, creating a unified brand+message statement. Dynamic and attention-grabbing.
+            </div>
+        </div>
+
+        <!-- Option 5: Large background logo -->
+        <div class="option option-5">
+            <div class="option-label">Option 5: Watermark Background</div>
+            <section class="hero">
+                <img src="/argo_logo.png" alt="Argo Logo" class="argo-logo-bg">
+                <div class="hero-content">
+                    <h2 class="hero-title">
+                        Elevate your <span class="gradient-text">Sales, Marketing & Customer Success</span> with Emotional Intelligent Agents
+                    </h2>
+                    <p class="hero-subtitle">
+                        Drive customer engagement, retention, and revenue with AI that truly understands your customers
+                    </p>
+                    <button class="hero-cta">
+                        Contact Us
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </section>
+            <div class="description">
+                <strong>Atmospheric approach:</strong> Giant watermark logo in background (5% opacity). Subtle brand presence that doesn't distract from content.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

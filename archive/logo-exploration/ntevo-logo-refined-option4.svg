@@ -1,0 +1,16 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Refined 4: Angular Momentum - Each shape rotated to suggest motion, no guide lines (pure Bauhaus) -->
+
+  <!-- Yellow Circle (top right) - circles don't rotate but positioned at angle -->
+  <circle cx="130" cy="70" r="22" fill="#F1C40F"/>
+
+  <!-- Blue Square (bottom, rotated 30°) -->
+  <g transform="translate(100, 140) rotate(30)">
+    <rect x="-22" y="-22" width="44" height="44" fill="#1E40AF"/>
+  </g>
+
+  <!-- Red Triangle (left, rotated 120° - dynamic angle) -->
+  <g transform="translate(60, 90) rotate(120)">
+    <polygon points="0,-22 19,11 -19,11" fill="#E63946"/>
+  </g>
+</svg>

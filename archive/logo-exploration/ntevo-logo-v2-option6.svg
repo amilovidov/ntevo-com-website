@@ -1,0 +1,12 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Option 6: Nested Inside - Triangle contains square contains circle -->
+
+  <!-- Red Triangle (outer, large) -->
+  <polygon points="100,40 160,160 40,160" fill="#E63946"/>
+
+  <!-- Blue Square (middle) -->
+  <rect x="70" y="90" width="60" height="60" fill="#1E40AF"/>
+
+  <!-- Yellow Circle (inner) -->
+  <circle cx="100" cy="120" r="25" fill="#F1C40F"/>
+</svg>
