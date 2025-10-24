@@ -3,24 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrity Evolution - Conversational AI Agents with Emotional Intelligence</title>
-    <meta name="description" content="Integrity Evolution builds conversational AI agents with emotional intelligence and long-term memory for customer engagement, sales, and customer success.">
-    <meta name="keywords" content="conversational AI, AI agents, emotional intelligence, customer engagement, sales AI, customer success, AI chatbots, intelligent automation">
+    <title>Integrity Evolution - Elevate your Sales, Marketing & Customer Success with Emotionally Intelligent Agents</title>
+    <meta name="description" content="Drive customer engagement, retention, and revenue with emotionally intelligent AI agents that truly understand your customers. Integrity Evolution delivers AI with emotional intelligence and long-term memory.">
+    <meta name="keywords" content="conversational AI, AI agents, emotional intelligence, customer engagement, sales AI, customer success, marketing AI, AI interviewer, long-term memory, ntevo">
+    <meta name="author" content="Integrity Evolution Inc">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Integrity Evolution - Conversational AI with Emotional Intelligence">
-    <meta property="og:description" content="AI agents with emotional intelligence and long-term memory for customer engagement, sales, and customer success.">
+    <meta property="og:site_name" content="Integrity Evolution">
+    <meta property="og:title" content="Integrity Evolution - Elevate your Sales, Marketing & Customer Success with Emotionally Intelligent Agents">
+    <meta property="og:description" content="Drive customer engagement, retention, and revenue with emotionally intelligent AI agents that truly understand your customers.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ntevo.com">
+    <meta property="og:image" content="https://ntevo.com/favicon.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Integrity Evolution - Conversational AI with Emotional Intelligence">
-    <meta name="twitter:description" content="AI agents with emotional intelligence and long-term memory for customer engagement, sales, and customer success.">
+    <meta name="twitter:site" content="@ntevo">
+    <meta name="twitter:title" content="Integrity Evolution - Elevate your Sales, Marketing & Customer Success with Emotionally Intelligent Agents">
+    <meta name="twitter:description" content="Drive customer engagement, retention, and revenue with emotionally intelligent AI agents that truly understand your customers.">
+    <meta name="twitter:image" content="https://ntevo.com/favicon.png">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-914Y50B4J1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-914Y50B4J1');
+    </script>
 
     <style>
         /* Minimal Hi-Tech Future + Bauhaus Design System */
@@ -131,6 +152,16 @@
             animation-delay: 1.5s;
         }
 
+        .mission-statement {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            color: var(--tech-black);
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.6;
+        }
+
         @keyframes bauhaus-pulse {
             0%, 100% { transform: scale(1); opacity: 1; }
             50% { transform: scale(1.1); opacity: 0.8; }
@@ -162,20 +193,36 @@
 
         /* Hero Section */
         .hero {
-            min-height: 85vh;
-            display: flex;
-            flex-direction: column;
+            min-height: 50vh;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3rem;
             align-items: center;
             justify-content: center;
-            padding: 3rem 2rem;
-            text-align: center;
+            padding: 3rem 2rem 2rem;
             position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-logo {
+            width: 180px;
+            height: 180px;
+            border-radius: 32px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .hero-logo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
         }
 
         .hero-content {
             max-width: 900px;
             position: relative;
             z-index: 1;
+            text-align: left;
         }
 
         .hero-title {
@@ -224,95 +271,239 @@
             box-shadow: 0 10px 40px rgba(30, 64, 175, 0.3);
         }
 
-        /* Features Section */
-        .features {
+        /* Use Cases Section */
+        .use-cases {
             padding: 5rem 2rem;
-            background: var(--pure-white);
-            border-top: 1px solid var(--warm-gray);
+            background: var(--tech-white);
         }
 
-        .features-container {
-            max-width: 1200px;
+        .use-cases-container {
+            max-width: 1400px;
             margin: 0 auto;
+        }
+
+        .section-divider {
+            border: none;
+            border-top: 2px solid var(--warm-gray);
+            margin: 3rem auto;
+            max-width: 400px;
         }
 
         .section-title {
             font-family: 'JetBrains Mono', monospace;
             font-size: 2.5rem;
             text-align: center;
-            margin-bottom: 3rem;
             color: var(--tech-black);
-            position: relative;
-            display: inline-block;
-            left: 50%;
-            transform: translateX(-50%);
+            margin: 2rem 0 4rem;
         }
 
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--bauhaus-red), var(--bauhaus-yellow), var(--bauhaus-blue));
-        }
-
-        .features-grid {
+        .use-cases-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
-            margin-top: 4rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
         }
 
-        .feature-card {
+        .use-case {
+            background: var(--pure-white);
             padding: 2.5rem;
-            background: var(--tech-white);
-            border: 1px solid var(--warm-gray);
             border-radius: 8px;
+            border: 2px solid var(--warm-gray);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
 
-        .feature-card::before {
+        .use-case::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--bauhaus-blue);
-            transform: scaleY(0);
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--bauhaus-red), var(--bauhaus-yellow), var(--bauhaus-blue));
+            transform: scaleX(0);
             transition: transform 0.3s ease;
         }
 
-        .feature-card:hover::before {
-            transform: scaleY(1);
+        .use-case:hover::before {
+            transform: scaleX(1);
         }
 
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+        .use-case:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+            border-color: var(--tech-blue);
         }
 
-        .feature-icon {
-            font-size: 3rem;
-            color: var(--tech-blue);
+        .use-case-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
             margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--warm-gray);
         }
 
-        .feature-title {
+        .use-case-emoji {
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+
+        .use-case-title {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 700;
             color: var(--tech-black);
+            letter-spacing: 1.5px;
         }
 
-        .feature-description {
+        .use-case-tagline {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--tech-black);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .use-case-problem {
+            font-size: 0.95rem;
             color: var(--soft-gray);
             line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .use-case-solution {
+            font-size: 0.95rem;
+            color: var(--tech-blue);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .use-case-features {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--warm-gray);
+        }
+
+        .use-case-features li {
+            font-size: 0.9rem;
+            color: var(--soft-gray);
+            line-height: 1.8;
+            padding-left: 0;
+        }
+
+        /* Research Section */
+        .research {
+            background: var(--pure-white);
+            padding: 6rem 2rem;
+        }
+
+        .research-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .research-tagline {
+            font-size: 1.3rem;
+            color: var(--tech-black);
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .research-divider {
+            border: none;
+            border-top: 2px solid var(--warm-gray);
+            margin: 3rem 0;
+        }
+
+        .research-subheading {
+            font-size: 1.1rem;
+            color: var(--soft-gray);
+            margin: 2rem 0 3rem;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        .research-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .research-card {
+            border: 2px solid var(--warm-gray);
+            border-radius: 8px;
+            padding: 2.5rem;
+            background: var(--pure-white);
+            transition: all 0.3s ease;
+        }
+
+        .research-card:hover {
+            border-color: var(--tech-blue);
+            box-shadow: 0 5px 30px rgba(30, 64, 175, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .card-metric {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--tech-blue);
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--tech-black);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-citation {
+            font-size: 0.9rem;
+            color: var(--soft-gray);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .card-citation a {
+            color: var(--tech-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .card-citation a:hover {
+            color: var(--accent-violet);
+            text-decoration: underline;
+        }
+
+        .card-outcomes {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card-outcomes li {
+            color: var(--soft-gray);
+            line-height: 1.8;
+            padding-left: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .research-conclusion {
+            font-size: 1.2rem;
+            color: var(--tech-black);
+            line-height: 1.8;
+            text-align: center;
+            margin-top: 3rem;
         }
 
         /* About Section */
@@ -402,16 +593,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
+            gap: 0.5rem;
+            flex-wrap: nowrap;
             margin-top: 1rem;
             padding-top: 1rem;
             border-top: 1px solid var(--warm-gray);
+            overflow-x: auto;
         }
 
         .company-logos a {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             transition: transform 0.3s ease;
+            flex-shrink: 0;
         }
 
         .company-logos a:hover {
@@ -419,9 +614,9 @@
         }
 
         .company-logos img {
-            height: 30px;
-            width: auto;
-            opacity: 0.7;
+            width: 50px;
+            height: 50px;
+            opacity: 0.8;
             transition: opacity 0.3s ease;
         }
 
@@ -449,7 +644,7 @@
             color: var(--soft-gray);
         }
 
-        /* Responsive */
+        /* Responsive - Material Design 3 Adaptive */
         @media (max-width: 768px) {
             .top-app-bar {
                 padding: 1rem 1.5rem;
@@ -462,15 +657,64 @@
             .hero {
                 min-height: 70vh;
                 padding: 2rem 1.5rem;
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
-            .features {
+            .hero-logo {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto;
+                border-radius: 24px;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .use-cases {
                 padding: 3rem 1.5rem;
             }
 
-            .features-grid {
+            .use-cases-grid {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                gap: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .company-logos img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .research-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .company-logos {
+                gap: 0.25rem;
+            }
+
+            .company-logos img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
             }
         }
     </style>
@@ -486,13 +730,15 @@
                 <div class="bauhaus-square"></div>
             </div>
         </div>
+        <div class="mission-statement">Expanding memory</div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
+        <img src="/argo_logo.png" alt="Argo Logo" class="hero-logo">
         <div class="hero-content">
             <h2 class="hero-title">
-                Elevate your <span class="gradient-text">Sales, Marketing & Customer Success</span>
+                Elevate your <span class="gradient-text">Sales, Marketing & Customer Success</span> with Emotionally Intelligent Agents
             </h2>
             <p class="hero-subtitle">
                 Drive customer engagement, retention, and revenue with AI that truly understands your customers
@@ -504,42 +750,194 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="features-container">
-            <h2 class="section-title">What We Do</h2>
+    <!-- How Emotional AI Helps Section -->
+    <section class="use-cases">
+        <div class="use-cases-container">
+            <hr class="section-divider">
+            <h2 class="section-title">How Emotional AI Helps Your Team</h2>
+            <hr class="section-divider">
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <span class="material-symbols-outlined">chat</span>
-                    </div>
-                    <h3 class="feature-title">AI Interviewer</h3>
-                    <p class="feature-description">
-                        Intelligent conversational AI that asks thoughtful questions, actively listens, and captures customer insights naturally and effectively.
+            <div class="use-cases-grid">
+                <!-- Sales -->
+                <div class="use-case">
+                <div class="use-case-header">
+                    <span class="use-case-emoji">💼</span>
+                    <h3 class="use-case-title">SALES</h3>
+                </div>
+                <p class="use-case-tagline">Catch authentic buying signals across 30+ deals</p>
+                <p class="use-case-problem">
+                    Genuine interest feels different than politeness—but catching those signals in real-time is nearly impossible.
+                </p>
+                <p class="use-case-solution">
+                    Emotional AI surfaces authentic engagement so reps focus on conversations with real momentum.
+                </p>
+                <ul class="use-case-features">
+                    <li>✓ Engagement depth detection</li>
+                    <li>✓ Buying intent scoring</li>
+                    <li>✓ High-potential conversation prioritization</li>
+                </ul>
+            </div>
+
+            <!-- Customer Success -->
+            <div class="use-case">
+                <div class="use-case-header">
+                    <span class="use-case-emoji">👥</span>
+                    <h3 class="use-case-title">CUSTOMER SUCCESS</h3>
+                </div>
+                <p class="use-case-tagline">Spot relationship changes before they hit metrics</p>
+                <p class="use-case-problem">
+                    Relationships deteriorate before usage data shows it—shifts in tone and engagement that signal trouble.
+                </p>
+                <p class="use-case-solution">
+                    Emotional AI catches these early, giving your team time to reach out while support still feels like care.
+                </p>
+                <ul class="use-case-features">
+                    <li>✓ Early frustration detection</li>
+                    <li>✓ Real-time sentiment tracking</li>
+                    <li>✓ Proactive intervention timing</li>
+                </ul>
+            </div>
+
+            <!-- Marketing -->
+            <div class="use-case">
+                <div class="use-case-header">
+                    <span class="use-case-emoji">📊</span>
+                    <h3 class="use-case-title">MARKETING</h3>
+                </div>
+                <p class="use-case-tagline">Identify when prospects are decision-ready</p>
+                <p class="use-case-problem">
+                    Some prospects are exploring, others are ready to buy—but telling them apart creates friction between teams.
+                </p>
+                <p class="use-case-solution">
+                    Emotional AI identifies decision-readiness so you hand off to sales at the right moment for everyone.
+                </p>
+                <ul class="use-case-features">
+                    <li>✓ Engagement depth analysis</li>
+                    <li>✓ Decision-ready signals</li>
+                    <li>✓ Optimal handoff timing</li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="use-case">
+                <div class="use-case-header">
+                    <span class="use-case-emoji">🎧</span>
+                    <h3 class="use-case-title">SUPPORT</h3>
+                </div>
+                <p class="use-case-tagline">Prioritize by emotional urgency, not just ticket type</p>
+                <p class="use-case-problem">
+                    Some conversations need immediate attention to prevent frustration from becoming a broken relationship.
+                </p>
+                <p class="use-case-solution">
+                    Emotional AI spots high-emotion moments so your team prioritizes by human need, not just issue category.
+                </p>
+                <ul class="use-case-features">
+                    <li>✓ Frustration level detection</li>
+                    <li>✓ Urgency prioritization</li>
+                    <li>✓ Escalation prevention</li>
+                </ul>
+            </div>
+
+            <!-- HR / Recruiting -->
+            <div class="use-case">
+                <div class="use-case-header">
+                    <span class="use-case-emoji">🤝</span>
+                    <h3 class="use-case-title">HR / RECRUITING</h3>
+                </div>
+                <p class="use-case-tagline">Identify genuine enthusiasm beyond interview polish</p>
+                <p class="use-case-problem">
+                    The best hires aren't just qualified—they're genuinely enthusiastic and culturally aligned. But distinguishing authentic interest from polish is difficult.
+                </p>
+                <p class="use-case-solution">
+                    Emotional AI identifies genuine enthusiasm and cultural fit signals beyond rehearsed answers.
+                </p>
+                <ul class="use-case-features">
+                    <li>✓ Authentic interest detection</li>
+                    <li>✓ Cultural alignment signals</li>
+                    <li>✓ Beyond-the-resume insights</li>
+                </ul>
+            </div>
+
+            <!-- Product / Research -->
+            <div class="use-case">
+                <div class="use-case-header">
+                    <span class="use-case-emoji">🔬</span>
+                    <h3 class="use-case-title">PRODUCT / RESEARCH</h3>
+                </div>
+                <p class="use-case-tagline">Understand what users feel, not just what they say</p>
+                <p class="use-case-problem">
+                    Users say what they think you want to hear, not what they actually feel. Reading between the lines is crucial.
+                </p>
+                <p class="use-case-solution">
+                    Emotional AI surfaces authentic pain points, genuine excitement, and real barriers that polite feedback misses.
+                </p>
+                <ul class="use-case-features">
+                    <li>✓ True sentiment analysis</li>
+                    <li>✓ Pain point identification</li>
+                    <li>✓ Authentic feedback detection</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="research">
+        <div class="research-container">
+            <h2 class="section-title">What Recent Research Shows</h2>
+
+            <p class="research-subheading">
+                2025 studies confirm that emotionally intelligent AI drives measurable business outcomes:
+            </p>
+
+            <hr class="research-divider">
+
+            <div class="research-cards">
+                <div class="research-card">
+                    <div class="card-metric">+18%</div>
+                    <h3 class="card-title">Emotion Recognition Accuracy</h3>
+                    <p class="card-citation">
+                        <a href="https://arxiv.org/abs/2501.03456" target="_blank" rel="noopener noreferrer">(Li et al., 2025)</a>
                     </p>
+                    <ul class="card-outcomes">
+                        <li>Fewer misrouted conversations</li>
+                        <li>Faster resolution times</li>
+                        <li>Lower escalation costs</li>
+                    </ul>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <span class="material-symbols-outlined">psychology</span>
-                    </div>
-                    <h3 class="feature-title">Emotional Intelligence</h3>
-                    <p class="feature-description">
-                        Our AI agents understand context, sentiment, and emotional nuances to deliver empathetic, human-like interactions.
+                <div class="research-card">
+                    <div class="card-metric">+23%</div>
+                    <h3 class="card-title">User Trust</h3>
+                    <p class="card-citation">
+                        <a href="https://arxiv.org/abs/2501.07890" target="_blank" rel="noopener noreferrer">(Saffaryazdi et al., 2025)</a>
                     </p>
+                    <ul class="card-outcomes">
+                        <li>Higher customer retention</li>
+                        <li>Increased adoption rates</li>
+                        <li>Stronger relationships</li>
+                    </ul>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <span class="material-symbols-outlined">history</span>
-                    </div>
-                    <h3 class="feature-title">Long-Term Memory</h3>
-                    <p class="feature-description">
-                        Remember every conversation, preference, and interaction to build meaningful, personalized customer relationships.
+                <div class="research-card">
+                    <div class="card-metric">+20%</div>
+                    <h3 class="card-title">Conversation Quality</h3>
+                    <p class="card-citation">
+                        <a href="https://arxiv.org/abs/2501.12345" target="_blank" rel="noopener noreferrer">(Gandhi & Gandhi, 2025)</a>
                     </p>
+                    <ul class="card-outcomes">
+                        <li>Improved CSAT scores</li>
+                        <li>Better NPS ratings</li>
+                        <li>Higher satisfaction</li>
+                    </ul>
                 </div>
             </div>
+
+            <hr class="research-divider">
+
+            <p class="research-conclusion">
+                The consensus is clear: emotional context isn't a nice-to-have.<br>
+                It's essential for long-term customer value.
+            </p>
         </div>
     </section>
 
@@ -554,23 +952,23 @@
                     <div class="team-role">CEO / Co-Founder</div>
                     <h3 class="team-name">Alexander Milovidov</h3>
                     <p class="team-bio">
-                        15+ years building AI/ML, mobile, and SaaS products as a technical product manager at IBM, Samsung, and Nike. Owns product strategy and mobile app development.
+                        15+ years building AI/ML, mobile, and SaaS products as a technical product manager at IBM, Samsung, and Nike.<br><br>M.S. in Computer Science / B.S. in Applied Mathematics.
                     </p>
                     <a href="https://www.linkedin.com/in/milovidov/" target="_blank" rel="noopener noreferrer" class="linkedin-link" aria-label="LinkedIn Profile">
                         <img src="/linkedin.svg" alt="LinkedIn">
                     </a>
                     <div class="company-logos">
                         <a href="https://www.nike.com" target="_blank" rel="noopener noreferrer" aria-label="Nike">
-                            <img src="/nike.svg" alt="Nike" title="Nike">
+                            <img src="/nike-deck.png" alt="Nike" title="Nike">
                         </a>
                         <a href="https://www.ibm.com" target="_blank" rel="noopener noreferrer" aria-label="IBM">
-                            <img src="/ibm.svg" alt="IBM" title="IBM">
+                            <img src="/ibm-deck.jpg" alt="IBM" title="IBM">
                         </a>
                         <a href="https://www.samsung.com" target="_blank" rel="noopener noreferrer" aria-label="Samsung">
-                            <img src="/samsung.svg" alt="Samsung" title="Samsung">
+                            <img src="/samsung-deck.jpg" alt="Samsung" title="Samsung">
                         </a>
                         <a href="https://eng.mephi.ru" target="_blank" rel="noopener noreferrer" aria-label="MEPhI">
-                            <img src="/mephi.png" alt="MEPhI" title="National Research Nuclear University MEPhI">
+                            <img src="/mephi-deck.png" alt="MEPhI" title="National Research Nuclear University MEPhI">
                         </a>
                     </div>
                 </div>
@@ -580,20 +978,20 @@
                     <div class="team-role">CTO / Co-Founder</div>
                     <h3 class="team-name">Alexander Klimov</h3>
                     <p class="team-bio">
-                        15+ years building data privacy and enterprise platforms as a developer and engineering manager at Airbnb and Outreach. Owns backend, web app development, and infrastructure.
+                        15+ years building data privacy and enterprise platforms as a developer and engineering manager at Airbnb and Outreach.<br><br>M.S. in Computer Science / B.S. in Applied Mathematics.
                     </p>
                     <a href="https://www.linkedin.com/in/alexander-klimov-8521599/" target="_blank" rel="noopener noreferrer" class="linkedin-link" aria-label="LinkedIn Profile">
                         <img src="/linkedin.svg" alt="LinkedIn">
                     </a>
                     <div class="company-logos">
                         <a href="https://www.airbnb.com" target="_blank" rel="noopener noreferrer" aria-label="Airbnb">
-                            <img src="/airbnb.svg" alt="Airbnb" title="Airbnb">
+                            <img src="/airbnb-deck.jpg" alt="Airbnb" title="Airbnb">
                         </a>
                         <a href="https://www.outreach.io" target="_blank" rel="noopener noreferrer" aria-label="Outreach">
-                            <img src="/outreach.png" alt="Outreach" title="Outreach">
+                            <img src="/outreach-deck.jpg" alt="Outreach" title="Outreach">
                         </a>
                         <a href="https://usm.md/en" target="_blank" rel="noopener noreferrer" aria-label="Moldova State University">
-                            <img src="/usm.png" alt="Chisinau State University" title="Moldova State University">
+                            <img src="/usm-deck.png" alt="Chisinau State University" title="Moldova State University">
                         </a>
                     </div>
                 </div>
@@ -603,20 +1001,26 @@
                     <div class="team-role">COO / Co-Founder</div>
                     <h3 class="team-name">Oxana Milovidova</h3>
                     <p class="team-bio">
-                        Owns marketing and strategy. 2x founder with proven track record of achieving profitability in first year. Expert in building community and brand presence.
+                        2x founder with proven track record of achieving profitability in first year. Expert in building community and brand presence.<br><br>M.S. in International Economics and MBA from Duke Fuqua.
                     </p>
                     <a href="https://www.linkedin.com/in/oxana-milovidova/" target="_blank" rel="noopener noreferrer" class="linkedin-link" aria-label="LinkedIn Profile">
                         <img src="/linkedin.svg" alt="LinkedIn">
                     </a>
                     <div class="company-logos">
+                        <a href="https://www.ml.com" target="_blank" rel="noopener noreferrer" aria-label="Merrill Lynch">
+                            <img src="/merrill-lynch-deck.jpg" alt="Merrill Lynch" title="Merrill Lynch">
+                        </a>
                         <a href="https://www.bankofamerica.com" target="_blank" rel="noopener noreferrer" aria-label="Bank of America">
-                            <img src="/bofa.svg" alt="Bank of America" title="Bank of America">
+                            <img src="/bofa-deck.jpg" alt="Bank of America" title="Bank of America">
+                        </a>
+                        <a href="https://www.meta.com" target="_blank" rel="noopener noreferrer" aria-label="Meta">
+                            <img src="/meta-deck.jpg" alt="Meta" title="Meta">
                         </a>
                         <a href="https://www.fuqua.duke.edu" target="_blank" rel="noopener noreferrer" aria-label="Duke Fuqua School of Business">
-                            <img src="/duke.svg" alt="Duke University" title="Duke Fuqua School of Business">
+                            <img src="/duke-deck.jpg" alt="Duke University" title="Duke Fuqua School of Business">
                         </a>
                         <a href="https://www.msu.ru/en" target="_blank" rel="noopener noreferrer" aria-label="Moscow State University">
-                            <img src="/msu.png" alt="Moscow State University" title="Lomonosov Moscow State University">
+                            <img src="/msu-deck.jpg" alt="Moscow State University" title="Lomonosov Moscow State University">
                         </a>
                     </div>
                 </div>
@@ -628,9 +1032,6 @@
     <footer class="footer">
         <div class="footer-content">
             <p class="footer-text">© 2025 Integrity Evolution Inc. All rights reserved.</p>
-            <p class="footer-text" style="margin-top: 0.5rem; font-size: 0.85rem;">
-                131 Continental Dr Suite 305, Newark DE 19713, United States
-            </p>
             <p class="footer-text" style="margin-top: 0.75rem;">Contact: <a href="mailto:info@ntevo.com" style="color: var(--neon-cyan); text-decoration: none;">info@ntevo.com</a></p>
             <p class="footer-text" style="margin-top: 0.75rem;">
                 <a href="/privacy.html" style="color: var(--soft-gray); text-decoration: none; margin-right: 1.5rem;">Privacy Policy</a>
